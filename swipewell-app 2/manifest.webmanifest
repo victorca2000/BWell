@@ -1,0 +1,16 @@
+{
+  "name": "Swipewell",
+  "short_name": "Swipewell",
+  "description": "Swipe through campus events, keep a health score, and track sleep, workouts and spending.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#241244",
+  "theme_color": "#4E2A84",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
