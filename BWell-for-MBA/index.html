@@ -7,11 +7,11 @@
 <meta name="theme-color" content="#4E2A84">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Swipewell">
+<meta name="apple-mobile-web-app-title" content="BWell">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<title>Swipewell</title>
+<title>BWell</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -329,7 +329,7 @@ svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stro
       <button class="pill-btn" id="btn-filters" aria-expanded="false" aria-controls="filters">
         <svg class="i" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="badge" id="filter-badge" hidden>0</span>
       </button>
-      <div id="page-title-wrap" hidden><div class="wordmark">Swipewell</div><div class="page-title" id="page-title"></div></div>
+      <div id="page-title-wrap" hidden><div class="wordmark">BWell</div><div class="page-title" id="page-title"></div></div>
     </div>
     <button class="ring-btn" id="ring" aria-label="Health score"></button>
     <div class="right">
@@ -381,11 +381,77 @@ const CONFIG = {
   DATA_FILE: 'events.csv',
   // Dummy data with fixed dates goes stale. Set this to the first date in your file and the app
   // shifts every event so that date becomes "today". Set to null for real, dated events.
-  ANCHOR_DATE: '2026-09-26',
+  ANCHOR_DATE: null,
   // Demo extras: offers five months of sample history at sign-up and fills Calendar sync
   // with sample classes. Set to false when you launch with real users.
   DEMO_MODE: true
 };
+/* Quality-of-Life model v3 (XGBoost on CDC BRFSS 2022, 427K adults, R2 0.451), precomputed.
+   QOL_TABLE[alcohol none|some|heavy][exercise 0|1][isolation 0-4][stress 0-4][sleep 3.0-12.0 by 0.5].
+   Isolation/stress levels: 0 never, 1 rarely, 2 sometimes, 3 usually, 4 always. Other factors at population averages. */
+const QOL_TABLE = {"none":{"0":{"0":{"0":[78,78,78,78,79,79,81,81,82,82,82,82,81,81,80,80,80,80,78],"1":[75,75,74,74,76,76,78,78,79,79,80,80,79,79,77,77,77,77,75],"2":[70,70,70,70,72,72,74,74,75,75,76,76,75,75,73,73,73,73,72],"3":[63,63,63,63,65,65,67,67,69,69,70,70,68,68,66,66,66,66,65],"4":[58,58,58,58,59,59,62,62,64,64,64,64,60,60,59,59,58,58,57]},"1":{"0":[77,77,77,77,78,78,79,79,81,81,81,81,80,80,79,79,78,78,77],"1":[74,74,73,73,75,75,77,77,78,78,78,78,77,77,76,76,75,75,74],"2":[69,69,69,69,70,70,72,72,74,74,74,74,73,73,72,72,72,72,71],"3":[62,62,62,62,64,64,66,66,68,68,68,68,66,66,64,64,64,64,63],"4":[56,56,56,56,58,58,60,60,62,62,63,63,58,58,57,57,56,56,55]},"2":{"0":[76,76,76,76,77,77,77,77,79,79,79,79,78,78,76,76,76,76,75],"1":[72,72,72,72,74,74,75,75,77,77,77,77,75,75,74,74,73,73,72],"2":[66,66,67,67,68,68,69,69,71,71,71,71,70,70,69,69,69,69,68],"3":[60,60,60,60,62,62,63,63,65,65,65,65,64,64,61,61,61,61,61],"4":[54,54,54,54,56,56,56,56,59,59,59,59,55,55,54,54,54,54,53]},"3":{"0":[75,75,75,75,76,76,77,77,78,78,79,79,77,77,75,75,76,76,75],"1":[71,71,71,71,72,72,74,74,75,75,75,75,73,73,72,72,72,72,71],"2":[65,65,65,65,67,67,68,68,70,70,70,70,68,68,67,67,68,68,67],"3":[59,59,59,59,61,61,62,62,64,64,64,64,62,62,60,60,61,61,60],"4":[53,53,53,53,55,55,55,55,58,58,58,58,55,55,54,54,54,54,53]},"4":{"0":[76,76,75,75,76,76,78,78,79,79,80,80,78,78,77,77,77,77,76],"1":[71,71,71,71,73,73,74,74,76,76,76,76,74,74,73,73,73,73,72],"2":[65,65,65,65,67,67,68,68,71,71,71,71,69,69,68,68,68,68,68],"3":[59,59,60,60,61,61,63,63,65,65,65,65,63,63,61,61,62,62,61],"4":[54,54,55,55,56,56,57,57,60,60,60,60,57,57,56,56,56,56,55]}},"1":{"0":{"0":[82,82,82,82,82,82,84,84,84,84,85,85,84,84,83,83,82,82,81],"1":[79,79,78,78,79,79,81,81,82,82,83,83,82,82,80,80,80,80,79],"2":[74,74,74,74,75,75,77,77,79,79,79,79,78,78,77,77,77,77,76],"3":[67,67,67,67,68,68,70,70,71,71,72,72,70,70,68,68,68,68,67],"4":[63,63,63,63,64,64,66,66,68,68,68,68,64,64,63,63,62,62,61]},"1":{"0":[81,81,81,81,81,81,82,82,83,83,84,84,83,83,82,82,81,81,80],"1":[78,78,78,78,78,78,80,80,81,81,81,81,80,80,79,79,79,79,78],"2":[73,73,73,73,74,74,76,76,78,78,78,78,76,76,76,76,75,75,75],"3":[65,65,65,65,66,66,68,68,70,70,70,70,68,68,67,67,67,67,66],"4":[60,60,60,60,61,61,63,63,65,65,65,65,61,61,59,59,59,59,58]},"2":{"0":[79,79,79,79,80,80,80,80,81,81,81,81,80,80,79,79,78,78,77],"1":[76,76,76,76,77,77,78,78,79,79,79,79,78,78,76,76,76,76,75],"2":[71,71,71,71,72,72,73,73,74,74,75,75,73,73,72,72,72,72,71],"3":[63,63,63,63,64,64,65,65,67,67,67,67,65,65,63,63,63,63,63],"4":[57,57,58,58,59,59,59,59,61,61,61,61,57,57,57,57,56,56,55]},"3":{"0":[78,78,78,78,79,79,79,79,80,80,81,81,79,79,78,78,78,78,77],"1":[75,75,75,75,76,76,77,77,78,78,78,78,76,76,75,75,75,75,74],"2":[69,69,69,69,70,70,71,71,73,73,73,73,72,72,71,71,71,71,70],"3":[62,62,62,62,63,63,64,64,66,66,66,66,64,64,62,62,63,63,62],"4":[56,56,56,56,58,58,58,58,60,60,60,60,57,57,56,56,56,56,56]},"4":{"0":[79,79,79,79,79,79,80,80,81,81,82,82,80,80,79,79,79,79,78],"1":[75,75,75,75,76,76,77,77,78,78,79,79,77,77,76,76,76,76,75],"2":[70,70,70,70,71,71,72,72,74,74,74,74,72,72,72,72,72,72,71],"3":[63,63,63,63,64,64,65,65,67,67,67,67,65,65,63,63,64,64,63],"4":[58,58,58,58,59,59,60,60,62,62,62,62,59,59,58,58,58,58,58]}}},"some":{"0":{"0":{"0":[79,79,79,79,80,80,81,81,82,82,83,83,82,82,80,80,80,80,79],"1":[75,75,75,75,77,77,79,79,80,80,80,80,79,79,77,77,77,77,76],"2":[71,71,71,71,73,73,75,75,76,76,77,77,75,75,74,74,74,74,73],"3":[64,64,64,64,66,66,68,68,70,70,70,70,69,69,67,67,67,67,66],"4":[58,58,58,58,60,60,62,62,64,64,65,65,60,60,59,59,59,59,58]},"1":{"0":[77,77,77,77,78,78,80,80,81,81,81,81,80,80,79,79,79,79,77],"1":[74,74,74,74,76,76,77,77,79,79,79,79,77,77,76,76,76,76,75],"2":[69,69,70,70,71,71,73,73,75,75,75,75,74,74,73,73,73,73,72],"3":[63,63,63,63,64,64,66,66,69,69,69,69,67,67,65,65,65,65,64],"4":[57,57,57,57,58,58,60,60,63,63,63,63,58,58,57,57,57,57,56]},"2":{"0":[76,76,76,76,77,77,78,78,79,79,79,79,78,78,77,77,77,77,75],"1":[73,73,73,73,75,75,75,75,77,77,77,77,76,76,74,74,74,74,73],"2":[67,67,67,67,69,69,70,70,72,72,72,72,71,71,69,69,70,70,69],"3":[61,61,61,61,63,63,63,63,66,66,66,66,64,64,62,62,62,62,61],"4":[54,54,55,55,56,56,57,57,59,59,59,59,56,56,55,55,54,54,53]},"3":{"0":[75,75,75,75,76,76,77,77,79,79,79,79,77,77,76,76,76,76,75],"1":[72,72,72,72,73,73,74,74,76,76,76,76,74,74,72,72,73,73,72],"2":[66,66,66,66,67,67,68,68,71,71,71,71,69,69,68,68,68,68,68],"3":[59,59,60,60,61,61,62,62,65,65,65,65,63,63,61,61,61,61,61],"4":[53,53,53,53,55,55,56,56,58,58,58,58,55,55,54,54,54,54,54]},"4":{"0":[76,76,76,76,77,77,78,78,80,80,80,80,78,78,77,77,77,77,76],"1":[72,72,72,72,73,73,75,75,76,76,76,76,75,75,73,73,74,74,73],"2":[66,66,66,66,68,68,69,69,71,71,72,72,70,70,69,69,69,69,69],"3":[60,60,60,60,62,62,63,63,66,66,66,66,64,64,62,62,62,62,62],"4":[55,55,55,55,56,56,57,57,60,60,60,60,57,57,56,56,56,56,56]}},"1":{"0":{"0":[82,82,82,82,83,83,84,84,85,85,85,85,84,84,83,83,83,83,81],"1":[79,79,79,79,80,80,82,82,83,83,83,83,82,82,81,81,80,80,79],"2":[75,75,75,75,76,76,77,77,79,79,80,80,79,79,77,77,77,77,76],"3":[67,67,68,68,69,69,70,70,72,72,72,72,71,71,69,69,69,69,68],"4":[63,63,63,63,65,65,66,66,68,68,69,69,64,64,63,63,63,63,62]},"1":{"0":[81,81,81,81,82,82,83,83,84,84,84,84,83,83,82,82,82,82,80],"1":[78,78,78,78,79,79,81,81,82,82,82,82,81,81,80,80,79,79,78],"2":[73,73,74,74,75,75,76,76,78,78,78,78,77,77,76,76,76,76,75],"3":[66,66,66,66,67,67,68,68,71,71,71,71,69,69,67,67,67,67,67],"4":[60,60,60,60,61,61,63,63,65,65,66,66,61,61,60,60,59,59,59]},"2":{"0":[79,79,79,79,80,80,80,80,81,81,81,81,81,81,79,79,79,79,78],"1":[77,77,77,77,78,78,79,79,80,80,80,80,78,78,77,77,77,77,76],"2":[71,71,72,72,73,73,73,73,75,75,75,75,74,74,73,73,73,73,72],"3":[64,64,64,64,65,65,66,66,67,67,68,68,66,66,64,64,64,64,63],"4":[58,58,58,58,59,59,59,59,61,61,61,61,58,58,57,57,57,57,56]},"3":{"0":[79,79,78,78,79,79,79,79,81,81,81,81,79,79,78,78,78,78,77],"1":[76,76,75,75,76,76,77,77,78,78,78,78,77,77,75,75,75,75,75],"2":[70,70,70,70,71,71,72,72,74,74,74,74,72,72,71,71,72,72,71],"3":[62,62,63,63,64,64,64,64,66,66,66,66,64,64,63,63,63,63,63],"4":[56,56,57,57,58,58,58,58,60,60,60,60,57,57,56,56,57,57,56]},"4":{"0":[79,79,79,79,80,80,80,80,82,82,82,82,81,81,79,79,80,80,79],"1":[76,76,76,76,77,77,78,78,79,79,79,79,77,77,76,76,76,76,76],"2":[70,70,70,70,71,71,72,72,74,74,74,74,73,73,72,72,73,73,72],"3":[63,63,63,63,64,64,65,65,67,67,67,67,65,65,64,64,64,64,64],"4":[58,58,58,58,59,59,60,60,62,62,62,62,59,59,58,58,59,59,58]}}},"heavy":{"0":{"0":{"0":[78,78,78,78,80,80,81,81,82,82,82,82,82,82,80,80,80,80,79],"1":[75,75,75,75,76,76,78,78,79,79,80,80,79,79,77,77,77,77,76],"2":[70,70,70,70,72,72,74,74,76,76,76,76,75,75,74,74,74,74,73],"3":[63,63,64,64,66,66,68,68,70,70,70,70,69,69,66,66,66,66,66],"4":[58,58,58,58,60,60,62,62,64,64,64,64,61,61,60,60,59,59,59]},"1":{"0":[76,76,77,77,78,78,79,79,80,80,80,80,80,80,78,78,78,78,77],"1":[73,73,73,73,75,75,77,77,78,78,78,78,77,77,75,75,75,75,74],"2":[68,68,69,69,70,70,72,72,74,74,74,74,73,73,72,72,72,72,71],"3":[62,62,62,62,63,63,66,66,68,68,68,68,66,66,64,64,65,65,64],"4":[56,56,56,56,58,58,60,60,62,62,62,62,59,59,57,57,57,57,56]},"2":{"0":[75,75,75,75,76,76,77,77,78,78,78,78,78,78,76,76,76,76,75],"1":[72,72,72,72,74,74,74,74,76,76,76,76,75,75,73,73,73,73,72],"2":[66,66,66,66,68,68,69,69,71,71,71,71,70,70,68,68,69,69,68],"3":[59,59,60,60,62,62,62,62,65,65,65,65,63,63,61,61,61,61,61],"4":[53,53,54,54,55,55,56,56,58,58,58,58,56,56,54,54,53,53,53]},"3":{"0":[74,74,74,74,75,75,76,76,78,78,78,78,77,77,75,75,75,75,75],"1":[71,71,71,71,72,72,73,73,75,75,75,75,73,73,72,72,72,72,71],"2":[65,65,65,65,66,66,68,68,70,70,70,70,68,68,67,67,68,68,67],"3":[58,58,59,59,60,60,61,61,64,64,64,64,62,62,60,60,61,61,60],"4":[52,52,53,53,54,54,55,55,57,57,58,58,55,55,53,53,54,54,53]},"4":{"0":[75,75,75,75,76,76,77,77,78,78,79,79,78,78,76,76,77,77,76],"1":[71,71,71,71,72,72,74,74,75,75,76,76,74,74,73,73,73,73,72],"2":[65,65,65,65,67,67,68,68,70,70,71,71,69,69,68,68,69,69,68],"3":[59,59,59,59,61,61,62,62,65,65,65,65,63,63,61,61,62,62,61],"4":[53,53,54,54,56,56,56,56,59,59,59,59,57,57,55,55,56,56,55]}},"1":{"0":{"0":[81,81,82,82,82,82,83,83,84,84,85,85,84,84,83,83,83,83,82],"1":[79,79,79,79,80,80,81,81,82,82,83,83,82,82,80,80,80,80,79],"2":[74,74,74,74,76,76,77,77,79,79,79,79,79,79,77,77,77,77,77],"3":[67,67,67,67,68,68,70,70,72,72,72,72,71,71,69,69,69,69,68],"4":[63,63,63,63,64,64,66,66,68,68,68,68,65,65,64,64,64,64,63]},"1":{"0":[80,80,80,80,81,81,82,82,83,83,83,83,83,83,81,81,81,81,80],"1":[77,77,77,77,78,78,80,80,81,81,81,81,80,80,79,79,79,79,78],"2":[73,73,73,73,74,74,75,75,77,77,78,78,77,77,76,76,76,76,75],"3":[65,65,65,65,66,66,68,68,70,70,70,70,69,69,67,67,67,67,66],"4":[59,59,60,60,61,61,62,62,65,65,65,65,62,62,60,60,60,60,59]},"2":{"0":[78,78,78,78,79,79,79,79,80,80,80,80,80,80,78,78,78,78,77],"1":[76,76,76,76,77,77,78,78,79,79,79,79,78,78,76,76,76,76,75],"2":[70,70,71,71,72,72,72,72,74,74,74,74,73,73,72,72,72,72,72],"3":[62,62,63,63,64,64,65,65,66,66,67,67,65,65,63,63,63,63,63],"4":[56,56,57,57,58,58,58,58,60,60,60,60,58,58,56,56,56,56,55]},"3":{"0":[77,77,77,77,78,78,78,78,80,80,80,80,79,79,77,77,78,78,77],"1":[74,74,75,75,75,75,76,76,77,77,77,77,76,76,74,74,75,75,74],"2":[69,69,69,69,70,70,71,71,73,73,73,73,72,72,70,70,71,71,71],"3":[61,61,62,62,63,63,63,63,65,65,65,65,64,64,62,62,63,63,62],"4":[55,55,56,56,57,57,57,57,59,59,59,59,57,57,56,56,56,56,56]},"4":{"0":[78,78,78,78,79,79,79,79,80,80,81,81,80,80,79,79,79,79,78],"1":[75,75,75,75,76,76,77,77,78,78,78,78,77,77,75,75,76,76,75],"2":[69,69,69,69,70,70,71,71,73,73,74,74,72,72,71,71,72,72,72],"3":[62,62,63,63,64,64,64,64,66,66,67,67,65,65,63,63,64,64,63],"4":[57,57,57,57,58,58,59,59,61,61,61,61,59,59,58,58,58,58,58]}}}};
+const REF_ISO = 1, REF_STRESS = 1;  // population medians ("rarely"); onboarding doesn't ask these
+function modelScore(sleep, ex, drinksPerWeek, iso = REF_ISO, stress = REF_STRESS){
+  const i = Math.max(0, Math.min(18, Math.round((+sleep - 3) * 2)));
+  const t = QOL_TABLE[!drinksPerWeek ? 'none' : drinksPerWeek >= 8 ? 'heavy' : 'some'][ex ? '1' : '0'];
+  const at = (a, b) => t[a][b][i], cl = v => Math.max(0, Math.min(4, v));
+  const a0 = Math.floor(cl(iso)), a1 = Math.ceil(cl(iso)), b0 = Math.floor(cl(stress)), b1 = Math.ceil(cl(stress));
+  const fa = cl(iso) - a0, fb = cl(stress) - b0;  // bilinear interpolation for fractional levels
+  return (at(a0,b0)*(1-fa) + at(a1,b0)*fa)*(1-fb) + (at(a0,b1)*(1-fa) + at(a1,b1)*fa)*fb;
+}
+const modelBaseline = p => modelScore(p.sleepHours, p.workoutDays > 0, p.drinksPerWeek);
+// Starting score: the model's gap from a typical student (7 h sleep, exercises, 2 drinks/wk), amplified 3x
+const BASELINE_SCALE = 3;
+const REF_BASE = modelScore(7, true, 2);
+const ampBaseline = v => Math.max(0, Math.min(100, Math.round(REF_BASE + (v - REF_BASE) * BASELINE_SCALE)));
+// Daily credits: model score for the logged day vs. your usual habits, scaled so a day moves the needle.
+const MODEL_SCALE = 22;   // multiplies model score gaps into credits (raise for bigger swings)
+const JITTER = 6;        // +/- random credits per logged day, fixed per date so it doesn't change on refresh
+const EVENT_JITTER = 3;  // +/- random credits per event, fixed per event
+function jit(seed, J){ let h = hash(seed); h ^= h >>> 16; h = Math.imul(h, 0x45d9f3b); h ^= h >>> 16; h = Math.imul(h, 0x45d9f3b); h ^= h >>> 16; return J ? (h >>> 0) % (2 * J + 1) - J : 0; }
+// Drinking: the model's gap between a moderate and a heavy drinker (your usual sleep/exercise), x MODEL_SCALE.
+// Light-drinking events cost 1x, heavy-drinking events (bar crawl, open bar...) 2x.
+const HEAVY_EVENTS_30D = 8;  // 8+ drinking events in 30 days puts you in the model's heavy-drinker group
+function drinkCost(p = state.profile){
+  const ex = p.workoutDays > 0, some = Math.min(Math.max(p.drinksPerWeek, 1), 7);
+  return Math.max(1, Math.round((modelScore(p.sleepHours, ex, some) - modelScore(p.sleepHours, ex, 8)) * MODEL_SCALE));
+}
+// Events -> model inputs, scored with the same formula as a logged day
+function eventMinutes(ev){ let d = toMin(ev.end) - toMin(ev.start); if(d <= 0) d += 1440; return d; }
+const WORKOUT_FULL_MINS = 90;  // workout events earn full credit at 90+ min, scaled down linearly for shorter ones
+function workoutEventPts(ev, p = state.profile){
+  const mins = Math.max(10, eventMinutes(ev));
+  const gap = modelScore(p.sleepHours, true, p.drinksPerWeek) - modelScore(p.sleepHours, false, p.drinksPerWeek);
+  return Math.round(gap * MODEL_SCALE * Math.min(mins / WORKOUT_FULL_MINS, 1));
+}
+const SOCIAL_ISO_SHIFT = 0.5;    // a sober social event = half a level less isolated
+const EVENT_STRESS_SHIFT = 0.15;  // a career/academic event = a light bump in stress (work stress, low weight)
+const DRINK_STRESS_SHIFT = 0.25;
+const HIGH_STAKES_SHIFT = 0.2;
+const NETWORKING_RE = /networking|reception|mixer/i;
+const NETWORKING_STRESS_SHIFT = 0.2; // networking receptions/mixers: more draining than a coffee chat, net slightly negative
+const CAREER_STRESS_SHIFT = 0.05; // everyday career events (coffee chats, presentations, workshops): light stress, net positive with social credit   // interviews, case prep, negotiation, exams: a real stressor, less than a drinking night
+const HIGH_STAKES_RE = /interview|case|negotiat|assessment|superday|exam|midterm|final/i;
+const OVERLAP_BONUS = 0.25;  // overlapping stressors are averaged, +25% per extra one so combos still weigh a bit more
+const CREDIT_CAP = 50;  // no single event or logged day moves the score more than +/-40
+function capped(rules){ const t = rules.reduce((a,r)=>a+r.pts,0); if(Math.abs(t) > CREDIT_CAP) rules.push({label:`Capped at ±${CREDIT_CAP}`, pts:Math.sign(t)*CREDIT_CAP - t}); return rules; }  // a drinking event = no social credit; a quarter level more stressed instead
+function levelPts(dIso, dStress, p = state.profile){
+  const ex = p.workoutDays > 0;
+  return Math.round((modelScore(p.sleepHours, ex, p.drinksPerWeek, REF_ISO + dIso, REF_STRESS + dStress) - modelScore(p.sleepHours, ex, p.drinksPerWeek)) * MODEL_SCALE);
+}
+const restEventPts = () => levelPts(0, -1);                     // meditation / wellness = one level less stressed
+const socialPts = () => levelPts(-SOCIAL_ISO_SHIFT, 0);
+const stressPts = () => levelPts(0, EVENT_STRESS_SHIFT);
+function sleepLostTo(ev){ let e = toMin(ev.end); if(e < toMin(ev.start) || e < 6*60) e += 1440; return Math.max(0.5, Math.round((e - (23*60+30)) / 30) / 2); }  // hours past 11:30 PM
+function lateNightPts(ev){ return modelDayPts({sleep: state.profile.sleepHours - sleepLostTo(ev), workout: 0}).sleepPts; }
+function heavyBaseline(p = state.profile){ return ampBaseline(modelScore(p.sleepHours, p.workoutDays > 0, 8)); }
+function modelDayPts(l, p = state.profile){
+  const usualEx = p.workoutDays > 0;
+  const sleepPts = Math.round((modelScore(l.sleep, usualEx, p.drinksPerWeek) - modelScore(p.sleepHours, usualEx, p.drinksPerWeek)) * MODEL_SCALE);
+  // workout effect scales with minutes: 10 min = 0.33x, 30 min = 1x, 60+ min = 2x
+  const workPts = l.workout >= 10 ? Math.round((modelScore(l.sleep, true, p.drinksPerWeek) - modelScore(l.sleep, false, p.drinksPerWeek)) * MODEL_SCALE * Math.min(l.workout / 30, 2)) : 0;
+  return {sleepPts, workPts};
+}
 const SAMPLE_ANCHOR = '2026-09-26';
 const DEMO_SHIFT = Math.round((new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()) - new Date(2026, 8, 26)) / 864e5);
 const SAMPLE_CSV = `event_name,date,start_time,end_time,location,distance_mi,current_attendees,price,hosted_by,category,source,setting,description
@@ -434,6 +500,7 @@ Friday Night Pub Quiz,2026-10-09,20:00,23:00,Church St Brewhouse,1.5,44,0,Quiz L
 
 /* events already on the student's own calendars, pulled in by "Sync" */
 const CAL_POOL = {
+  'Partiful':[], 'CMC':[], 'CampusGroups':[],
   'Outlook':[
     {name:'CHEM 212 Lab', date:'2026-09-30', start:'14:00', end:'17:00', location:'Technological Institute B12', category:'Academic'},
     {name:'ECON 310 Lecture', date:'2026-10-01', start:'11:00', end:'12:20', location:'Harris Hall 107', category:'Academic'},
@@ -458,7 +525,7 @@ const CATS = {
   Arts:     {g:['#B4441B','#F2A93B'], icon:'<path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.4 0 2-1 1.4-2.2-.6-1.2.1-2.3 1.5-2.3H17a3.5 3.5 0 0 0 3.5-3.5C20.5 7.3 16.7 3.5 12 3.5z"/><circle cx="8" cy="11" r="1.1"/><circle cx="11" cy="7.5" r="1.1"/><circle cx="15.5" cy="8.5" r="1.1"/>'},
   Volunteer:{g:['#0E6F68','#35C2B0'], icon:'<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>'}
 };
-const SOURCES = ['Google Calendar','Outlook','Apple Calendar','Campus Events'];
+const SOURCES = ['Partiful','CMC','CampusGroups','Google Calendar','Outlook','Apple Calendar','Campus Events'];
 const SETTINGS = ['Indoor','Outdoor','Virtual'];
 const TIMES = [['morning','Morning',0,12*60],['afternoon','Afternoon',12*60,17*60],['evening','Evening',17*60,21*60],['late','Late night',21*60,24*60]];
 const INTERESTS = {
@@ -556,22 +623,46 @@ function creditRules(ev){
   const text = `${ev.name} ${ev.location}`; const out=[]; let drink=false;
   for(const r of RULES){
     if(r.drink && drink) continue;
-    const hit = r.re.test(r.drink ? text : ev.name) || (r.label==='Workout' && ev.category==='Fitness');
-    if(hit){ out.push({label:r.label, pts:r.pts}); if(r.drink) drink=true; }
+    const hit = (r.label==='Rest & recovery' && ev.category==='Wellness') || (r.re.test(r.drink ? text : ev.name) && !(r.label==='Workout' && (/Career|Academic/.test(ev.category) || /kickoff|meeting|info session|speaker/i.test(ev.name)))) || (r.label==='Workout' && ev.category==='Fitness');
+    if(hit){ out.push({label:r.label, pts: r.drink ? -drinkCost() * (r.label==='Heavy drinking' ? 2 : 1) : r.label==='Workout' ? workoutEventPts(ev) : r.label==='Rest & recovery' ? restEventPts() : r.pts}); if(r.drink) drink=true; }
   }
+  if(!drink && ev.drinking) out.push({label:'Light drinking', pts:-drinkCost()});
   const s = toMin(ev.start), e = toMin(ev.end);
-  if(e < s || e >= 23*60+30) out.push({label:'Late night', pts:-5});
-  return out;
+  const pro = ev.category==='Career', drank = drink || ev.drinking;
+  const stakes = /Career|Academic/.test(ev.category) && HIGH_STAKES_RE.test(ev.name);
+  if(drank && pro) for(let i = out.length - 1; i >= 0; i--) if(/drinking/i.test(out[i].label)) out.splice(i, 1);  // professional receptions: no drinking cost, only work stress
+  if(drank && !pro){ const d = out.find(r => /drinking/i.test(r.label)); if(d) d.pts = Math.round((d.pts + levelPts(0, DRINK_STRESS_SHIFT)) / 2); }  // drinking + alcohol stress shown as one averaged line
+  else if(/Social|Nightlife|Arts|Volunteer|Career/.test(ev.category) && !stakes) out.push({label:'Social connection', pts:socialPts()});
+  if(stakes) out.push({label:'High-stakes stress', pts:levelPts(0, HIGH_STAKES_SHIFT)});
+  else if(ev.category==='Career' && NETWORKING_RE.test(ev.name)) out.push({label:'Networking stress', pts:levelPts(0, NETWORKING_STRESS_SHIFT)});
+  else if(ev.category==='Career') out.push({label:'Work stress', pts:levelPts(0, CAREER_STRESS_SHIFT)});
+  else if(ev.category==='Academic') out.push({label:'Work stress', pts:stressPts()});
+  if(e < s || e >= 23*60+30) out.push({label:'Late night', pts:lateNightPts(ev)});
+  const str = out.filter(r => r.pts < 0 && /drinking|stress|Late night/i.test(r.label));
+  if(str.length > 1){ const sum = str.reduce((a,r)=>a+r.pts,0), comb = Math.round(sum / str.length * (1 + OVERLAP_BONUS * (str.length - 1)));
+    out.push({label:`Overlapping stressors averaged (${str.length})`, pts: comb - sum}); }
+  const j = jit('ev' + ev.name + ev.date, EVENT_JITTER);
+  if(j) out.push({label:'Vibe check (random)', pts:j});
+  if(out.reduce((a,r)=>a+r.pts,0) === 0){  // never show a 0-credit event: nudge by 1 point
+    const v = out.find(r=>r.label.startsWith('Vibe')), d = v ? (Math.sign(v.pts) || 1) : (hash(ev.name + ev.date) % 2 ? 1 : -1);
+    if(v) v.pts += d; else out.push({label:'Vibe check (random)', pts:d});
+  }
+  return capped(out);
 }
+function recomputeCredits(){
+  DECK_RANK = null;
+  for(const ev of EVENTS){ ev.rules = creditRules(ev); ev.credit = ev.rules.reduce((a,r)=>a+r.pts,0); const pr = priorityOf(ev); ev.priority = pr.level; ev.priorityWhy = pr.why; }
+  invalidate();
+}
+// Priority = how much the user cares about this kind of event (onboarding sliders, 0-10)
+const PREF_GROUPS = {social:['Social','Nightlife','Arts','Volunteer'], professional:['Career'], academics:['Academic'], health:['Fitness','Wellness']};
+const PREF_LABELS = {social:'Social', professional:'Professional', academics:'Academics', health:'Health & wellness'};
 function priorityOf(ev){
-  let p = ev.credit; const why = [];
+  const prefs = (state && state.profile && state.profile.prefs) || {social:5, professional:5, academics:5, health:5};
+  const g = Object.keys(PREF_GROUPS).find(k => PREF_GROUPS[k].includes(ev.category)) || 'social';
+  const v = prefs[g] ?? 5, why = [`You rated ${PREF_LABELS[g]} ${v}/10`];
   if(ev.credit>0) why.push(`Earns ${ev.credit} credits`); if(ev.credit<0) why.push(`Costs ${-ev.credit} credits`);
-  if(ev.category==='Career' || ev.category==='Academic'){ p += 8; why.push(`${ev.category} event`); }
-  if(ev.price===0){ p += 2; why.push('Free'); }
-  if(ev.attendees>=100){ p += 2; why.push('Big turnout (100+)'); }
-  if(ev.distance<=1){ p += 2; why.push('On or near campus'); }
-  if(ev.distance>8){ p -= 3; why.push('Over 8 mi away'); }
-  return {level: p>=10 ? 'high' : p>=0 ? 'moderate' : 'low', why};
+  return {level: v>=7 ? 'high' : v>=4 ? 'moderate' : 'low', why};
 }
 function makeEvent(o){
   const cat = Object.keys(CATS).find(c => c.toLowerCase()===String(o.category||'').trim().toLowerCase()) || 'Social';
@@ -580,7 +671,8 @@ function makeEvent(o){
     location:(o.location||'TBA').trim(), distance: o.distance!=='' && o.distance!=null && isFinite(+o.distance) ? +o.distance : +(0.3 + (hash(o.name)%30)/10).toFixed(1),
     attendees: parseInt(o.attendees)||0, price: parseFloat(String(o.price||'0').replace(/[^0-9.]/g,''))||0,
     host:(o.host||'—').trim(), category:cat, source: o.source || 'Campus Events',
-    setting: SETTINGS.includes(o.setting) ? o.setting : 'Indoor', description:(o.description||'').trim()
+    setting: SETTINGS.includes(o.setting) ? o.setting : 'Indoor', description:(o.description||'').trim(),
+    drinking: !!o.drinking, link: o.link || ''
   };
   ev.id = slug(ev.name)+'-'+ev.date;
   ev.rules = creditRules(ev);
@@ -607,7 +699,7 @@ const ALIASES = {
   name:['event_name','name','event','title'], date:['date','event_date'], start:['start_time','start','starts'], end:['end_time','end','ends'],
   location:['location','venue','place'], distance:['distance_mi','distance','distance_miles','miles'], attendees:['current_attendees','attendees','going'],
   price:['price','price_for_the_event','cost','ticket_price'], host:['hosted_by','host','organizer','organiser'], category:['category','type'],
-  source:['source','calendar'], setting:['setting','venue_type'], description:['description','details','about']
+  source:['source','calendar'], drinking:['contains_drinking','drinking'], link:['link','url'], setting:['setting','venue_type'], description:['description','details','about']
 };
 const normKey = h => String(h).trim().toLowerCase().replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');
 function rowToEvent(get, shift){
@@ -617,7 +709,7 @@ function rowToEvent(get, shift){
   return makeEvent({ name:get('name'), date: shift ? addDays(date, shift) : date, start, end:end||start, location:get('location'),
     distance:get('distance'), attendees:get('attendees'), price, host:get('host'), category:get('category'),
     source: SOURCES.find(x=>x.toLowerCase()===get('source').toLowerCase()) || 'Campus Events',
-    setting: SETTINGS.find(x=>x.toLowerCase()===get('setting').toLowerCase()) || 'Indoor', description:get('description') });
+    setting: SETTINGS.find(x=>x.toLowerCase()===get('setting').toLowerCase()) || 'Indoor', description:get('description'), drinking:/^(true|1|yes)$/i.test(get('drinking')), link:get('link') });
 }
 function eventsFromCSV(text, shift=0){
   const rows = parseCSV(text.replace(/^﻿/,'')); if(rows.length<2) return [];
@@ -634,20 +726,23 @@ function eventsFromJSON(text, shift=0){
 function dedupe(list){ const seen = new Set(); return list.filter(e => e && !seen.has(e.id) && seen.add(e.id)); }
 
 /* ================= STATE ================= */
-const STORE = 'swipewell.v2';
-const defaultFilters = () => ({cats:Object.keys(CATS), times:TIMES.map(t=>t[0]), settings:[...SETTINGS], srcs:[...SOURCES], maxDist:15, maxPrice:60, when:'all', prio:'any', crowd:'any', sort:'soon', hideNeg:false, noClash:false, peers:false});
+const STORE = 'bwell.v2';
+const OLD_STORE = 'swipewell.v2'; // earlier name; migrated on first load
+const defaultFilters = () => ({cats:Object.keys(CATS), times:TIMES.map(t=>t[0]), settings:[...SETTINGS], srcs:[...SOURCES], maxDist:15, maxPrice:60, when:'all', prio:'any', crowd:'any', sort:'mix', hideNeg:false, noClash:false, peers:false});
 function freshState(){
   return { v:2, onboarded:false, tab:'discover', premium:false, plan:'year',
-    profile:{name:'', sleepHours:7, workoutDays:3, workoutMins:40, drinksPerWeek:2, floor:75, budget:60},
+    profile:{name:'', sleepHours:7, workoutDays:3, workoutMins:40, drinksPerWeek:2, floor:75, budget:60, prefs:{social:5, professional:5, academics:5, health:5}},
     interests:['Running','Startups','AI & Data','Hiking & Outdoors'],
     goals:{sleep:{on:true,target:7.5}, workouts:{on:true,target:4}, spend:{on:true}, score:{on:true,target:85}, drinks:{on:false,target:2}, late:{on:false,target:1}},
-    baseline:72, startDay:TODAY, logs:{}, expenses:[], committed:[], decisions:{}, filters:defaultFilters(),
+    baseline:modelBaseline({sleepHours:7, workoutDays:3, drinksPerWeek:2}), startDay:TODAY, logs:{}, expenses:[], committed:[], decisions:{}, filters:defaultFilters(),
     calendars:Object.fromEntries(SOURCES.map(s=>[s,{on:true, synced:null}])), undo:null, promptedOn:null, waved:{}, period:'week' };
 }
-function load(){ try{ const r = localStorage.getItem(STORE); return r ? JSON.parse(r) : null; }catch(e){ return null; } }
+function load(){ try{ let r = localStorage.getItem(STORE); if(!r){ r = localStorage.getItem(OLD_STORE); if(r){ localStorage.setItem(STORE, r); localStorage.removeItem(OLD_STORE); } } return r ? JSON.parse(r) : null; }catch(e){ return null; } }
 function save(){ try{ localStorage.setItem(STORE, JSON.stringify(state)); }catch(e){} }
 let state = Object.assign(freshState(), load() || {});
 state.filters = Object.assign(defaultFilters(), state.filters);
+if(!state.mixSortV1){ state.filters.sort = 'mix'; state.mixSortV1 = true; }
+for(const s of SOURCES) if(!state.calendars[s]){ state.calendars[s] = {on:true, synced:null}; if(!state.filters.srcs.includes(s)) state.filters.srcs.push(s); }
 let EVENTS = [], PEOPLE = [], DATA_NOTE = '';
 function buildPeople(){
   PEOPLE = PEOPLE_RAW.map(([name, school, ints], i) => {
@@ -673,13 +768,18 @@ async function loadData(){
 /* ================= SCORING ================= */
 const REVERT = 0.4;
 function baselineFrom(p){
+  return ampBaseline(modelBaseline(p));
   let b = 60;
   b += (p.sleepHours>=7 && p.sleepHours<9) ? 8 : p.sleepHours<6 ? -8 : 0;
   b += p.workoutDays>=4 ? 8 : p.workoutDays>=2 ? 4 : p.workoutDays===0 ? -4 : 0;
   b += p.drinksPerWeek===0 ? 4 : p.drinksPerWeek<=3 ? 0 : p.drinksPerWeek<=7 ? -4 : -8;
   return clamp(b);
 }
-function logRules(l){
+function logRules(l, k = TODAY){
+  const m = modelDayPts(l), j = jit('day' + k, JITTER);
+  return capped([{label:`Slept ${l.sleep} h (usual ${state.profile.sleepHours} h)`, pts:m.sleepPts},
+          {label:`Workout ${l.workout} min`, pts:m.workPts},
+          ...(j ? [{label:'Day-to-day variation', pts:j}] : [])]);
   const r=[];
   if(l.sleep>=7 && l.sleep<9) r.push({label:`Slept ${l.sleep} h`, pts:10});
   else if(l.sleep<6) r.push({label:`Slept ${l.sleep} h (under 6)`, pts:-10});
@@ -699,10 +799,13 @@ function series(){
   let start = state.startDay;
   for(const k in state.logs) if(k<start) start=k;
   for(const k in byDay) if(k<start) start=k;
+  const drinkDays = state.committed.filter(x => isDrink(x.ev)).map(x => x.on);
+  const baseOn = k => { const from = addDays(k, -29); const n = drinkDays.filter(d => d>=from && d<=k).length;
+    return n >= HEAVY_EVENTS_30D ? Math.min(state.baseline, heavyBaseline()) : state.baseline; };
   const out=[]; let s = state.baseline;
   for(let k=start, i=0; k<=TODAY && i<800; k=addDays(k,1), i++){
-    if(i>0) s += (state.baseline - s) * REVERT;
-    s = clamp(s + (state.logs[k] ? sum(logRules(state.logs[k])) : 0) + (byDay[k]||0));
+    if(i>0) s += (baseOn(k) - s) * REVERT;
+    s = clamp(s + (state.logs[k] ? sum(logRules(state.logs[k], k)) : 0) + (byDay[k]||0));
     out.push({k, s});
   }
   _series = out; return out;
@@ -728,7 +831,6 @@ function passes(ev, f=state.filters){
   if(!f.times.includes(timeBucket(ev))) return false;
   if(!f.settings.includes(ev.setting)) return false;
   if(f.maxDist<15 && ev.distance>f.maxDist) return false;
-  if(f.maxPrice<60 && ev.price>f.maxPrice) return false;
   if(f.hideNeg && ev.credit<0) return false;
   if(f.prio==='high' && ev.priority!=='high') return false;
   if(f.prio==='moderate' && ev.priority==='low') return false;
@@ -745,15 +847,34 @@ function passes(ev, f=state.filters){
 }
 const committedIds = () => new Set(state.committed.map(x=>x.ev.id));
 const PRANK = {high:0, moderate:1, low:2};
+// Mixed deck: random order each app open, in a 1 positive : 2 negative rhythm; next 14 days first
+const DECK_SEED = String(Math.random());
+// Bug fix: the order is computed ONCE (per app open / credit change) and then kept, so swiping doesn't
+// re-deal the pattern and keep resurfacing the same card behind the top one.
+let DECK_RANK = null;
+function mixDeck(list){
+  if(!DECK_RANK){ DECK_RANK = new Map(mixOrder(EVENTS.filter(e => e.date >= TODAY)).map((e, i) => [e.id, i])); }
+  return list.slice().sort((a, b) => (DECK_RANK.get(a.id) ?? 1e9) - (DECK_RANK.get(b.id) ?? 1e9));
+}
+function mixOrder(list){
+  const shuffle = a => a.map(e => [hash(DECK_SEED + e.id), e]).sort((x, y) => x[0] - y[0]).map(x => x[1]);
+  const weave = a => { const pos = shuffle(a.filter(e => e.credit > 0)), neg = shuffle(a.filter(e => e.credit <= 0)), out = [];
+    while(pos.length || neg.length){ if(pos.length) out.push(pos.shift()); for(let k = 0; k < 2 && neg.length; k++) out.push(neg.shift()); }
+    return out; };
+  const soon = list.filter(e => diffDays(TODAY, e.date) < 14), later = list.filter(e => diffDays(TODAY, e.date) >= 14);
+  return [...weave(soon), ...weave(later)];
+}
 function queue(){
   const cids = committedIds(), s = state.filters.sort;
-  return EVENTS.filter(ev => ev.date>=TODAY && !state.decisions[ev.id] && !cids.has(ev.id) && passes(ev))
+  const list = EVENTS.filter(ev => ev.date>=TODAY && !state.decisions[ev.id] && !cids.has(ev.id) && passes(ev));
+  if(s === 'mix') return mixDeck(list);
+  return list
     .sort((a,b) => (s==='priority' ? PRANK[a.priority]-PRANK[b.priority] : s==='credits' ? b.credit-a.credit : s==='distance' ? a.distance-b.distance : 0)
       || a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
 }
 
 /* ================= MONEY + PERFORMANCE ================= */
-const isDrink = ev => ev.rules.some(r => /drinking/i.test(r.label));
+const isDrink = ev => !!ev.drinking || ev.rules.some(r => /drinking/i.test(r.label));  // still counts toward drink totals
 function statsFor(a, b){
   const scores = new Map(series().map(p=>[p.k,p.s]));
   const out = {score:0, scoreN:0, credits:0, sleep:0, sleepN:0, workout:0, sessions:0, events:0, spend:0, planned:0, drinks:0, late:0, byCat:{}};
@@ -761,7 +882,7 @@ function statsFor(a, b){
   for(let k=a; k<=last; k=addDays(k,1)){
     if(scores.has(k)){ out.score += scores.get(k); out.scoreN++; }
     const l = state.logs[k];
-    if(l){ out.credits += sum(logRules(l)); out.sleep += l.sleep; out.sleepN++; out.workout += l.workout; if(l.workout>=20) out.sessions++;
+    if(l){ out.credits += sum(logRules(l, k)); out.sleep += l.sleep; out.sleepN++; out.workout += l.workout; if(l.workout>=20) out.sessions++;
       if(l.spend){ out.spend += l.spend; out.byCat['Everyday'] = (out.byCat['Everyday']||0) + l.spend; } }
   }
   for(const x of state.committed){
@@ -774,7 +895,6 @@ function statsFor(a, b){
       if(x.ev.rules.some(r=>r.label==='Late night')) out.late++;
     }
   }
-  for(const e of state.expenses) if(e.date>=a && e.date<=last){ out.spend += e.amount; out.byCat[e.cat] = (out.byCat[e.cat]||0) + e.amount; }
   out.avgScore = out.scoreN ? out.score/out.scoreN : null;
   out.avgSleep = out.sleepN ? out.sleep/out.sleepN : null;
   return out;
@@ -883,7 +1003,7 @@ function renderTop(){
 function activeFilterCount(){
   const f = state.filters, d = defaultFilters(); let n=0;
   for(const k of ['cats','times','settings','srcs']) if(f[k].length!==d[k].length) n++;
-  for(const k of ['maxDist','maxPrice','when','prio','crowd','hideNeg','noClash','peers']) if(f[k]!==d[k]) n++;
+  for(const k of ['maxDist','when','prio','crowd','hideNeg','noClash','peers']) if(f[k]!==d[k]) n++;
   return n;
 }
 
@@ -997,14 +1117,12 @@ function renderFilters(){
   const sw = (key, title, sub, locked) => `<div class="switch-row"><div><b>${title}</b>${locked?' <span class="lock-tag">Premium</span>':''}<div class="small muted">${sub}</div></div>
     <label class="switch"><input type="checkbox" data-sw="${key}" ${f[key]&&!locked?'checked':''} ${locked?'disabled':''} aria-label="${title}"><span></span></label></div>`;
   $('#filters').innerHTML = `
-    <div class="fgroup"><div class="fhead"><b>Sort deck by</b></div>${seg('sort',[['soon','Soonest'],['priority','Priority'],['credits','Credits'],['distance','Nearest']])}</div>
+    <div class="fgroup"><div class="fhead"><b>Sort deck by</b></div>${seg('sort',[['mix','Mixed'],['soon','Soonest'],['priority','Priority'],['credits','Credits'],['distance','Nearest']])}</div>
     <div class="fgroup"><div class="fhead"><b>Category</b><span>${f.cats.length} of ${Object.keys(CATS).length}</span></div><div class="chips">${chipset('cats', Object.keys(CATS).map(c=>[c,c,CATS[c].g[0]]))}</div></div>
     <div class="fgroup"><div class="fhead"><b>When</b></div>${seg('when',[['all','Any day'],['today','Today'],['weekend','Weekend'],['week','7 days']])}
       <div class="chips">${chipset('times', TIMES.map(t=>[t[0],t[1]]))}</div></div>
     <div class="fgroup"><div class="fhead"><b>Distance</b><span id="f-dist-out"></span></div>
       <input type="range" id="f-dist" min="1" max="15" step="1" value="${f.maxDist}" aria-label="Maximum distance in miles"></div>
-    <div class="fgroup"><div class="fhead"><b>Price</b><span id="f-price-out"></span></div>
-      <input type="range" id="f-price" min="0" max="60" step="5" value="${f.maxPrice}" aria-label="Maximum price in dollars"></div>
     <div class="fgroup"><div class="fhead"><b>Priority</b></div>${seg('prio',[['any','All'],['moderate','Moderate +'],['high','High only']])}</div>
     <div class="fgroup"><div class="fhead"><b>Crowd size</b></div>${seg('crowd',[['any','Any'],['small','Under 30'],['medium','30–100'],['large','100+']])}</div>
     <div class="fgroup"><div class="fhead"><b>Setting</b></div><div class="chips">${chipset('settings', SETTINGS.map(s=>[s,s]))}</div></div>
@@ -1020,7 +1138,6 @@ function renderFilters(){
 function updateFilterLabels(){
   const f = state.filters;
   $('#f-dist-out').textContent = f.maxDist>=15?'Any distance':'Within '+f.maxDist+' mi';
-  $('#f-price-out').textContent = f.maxPrice>=60?'Any price':f.maxPrice===0?'Free only':'Up to $'+f.maxPrice;
   const n = queue().length; $('#f-apply').textContent = `Show ${n} event${n===1?'':'s'}`;
   renderTop();
 }
@@ -1172,7 +1289,7 @@ function barChart(bks, stats, period){
       <path class="bar" d="M${x0},${y(0)}V${top+r}Q${x0},${top} ${x0+r},${top}H${x0+bw-r}Q${x0+bw},${top} ${x0+bw},${top+r}V${y(0)}Z" fill="${over?'var(--warn)':'var(--accent)'}"/>${planned}`; }).join('');
   const bl = period==='month' ? '' : `<line x1="${L}" x2="${W-R}" y1="${y(budgets[0])}" y2="${y(budgets[0])}" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="4 4"/><text x="${W-R}" y="${y(budgets[0])-5}" text-anchor="end" style="fill:var(--ink)">budget ${money(budgets[0])}</text>`;
   const lab = [0, Math.floor((bks.length-1)/2), bks.length-1].map(i=>`<text x="${L+i*slot+slot/2}" y="${H-5}" text-anchor="middle">${esc(bks[i].label)}</text>`).join('');
-  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Money spent per period">${grid}${bars}${bl}${lab}</svg>`;
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Event money spent per period">${grid}${bars}${bl}${lab}</svg>`;
 }
 function delta(cur, prev, unit='', invert=false, dp=0){
   if(cur==null || prev==null) return '<div class="delta muted">—</div>';
@@ -1211,7 +1328,7 @@ function renderProgress(){
     <div class="section"><div class="row-between"><div class="eyebrow">Average score</div><div class="legend"><span><i style="border-color:var(--accent)"></i>Score</span><span><i style="border-color:var(--bad);border-top-style:dashed"></i>Floor</span></div></div>
       <div class="panel">${lineChart(bks, stats)}</div>
       ${best?`<div class="small muted">Best ${period==='day'?'day':period}: <b style="color:var(--ink)">${esc(bks[best.i].long)}</b> at ${Math.round(best.st.avgScore)}. Current streak of 7h+ nights: <b style="color:var(--ink)">${streak}</b>.</div>`:''}</div>
-    <div class="section"><div class="eyebrow">Money spent</div>
+    <div class="section"><div class="eyebrow">Event money spent</div>
       <div class="panel" style="display:grid;gap:12px">
         <div class="row-between"><div><div class="big-num">${money(c.spend)}</div><div class="small muted">spent ${word}${c.planned?` · ${money(c.planned)} more planned`:''}</div></div>
           <div style="text-align:right"><div class="mono ${c.spend>budget?'t-bad':''}" style="font-weight:700;font-size:15px">${money(Math.round(budget))}</div><div class="small muted">budget</div></div></div>
@@ -1220,21 +1337,8 @@ function renderProgress(){
       </div>
       <div class="panel">${barChart(bks, stats, period)}
         <div class="legend" style="margin-top:6px"><span><i style="border-top:8px solid var(--accent);width:10px"></i>Spent</span><span><i style="border-top:8px solid var(--warn);width:10px"></i>Over budget</span><span><i style="border-color:var(--accent);border-top-style:dashed"></i>Planned</span></div></div>
-      ${cats.length?`<div class="panel"><div class="eyebrow" style="margin-bottom:6px">Where it went ${word}</div>${cats.map(([k,v])=>`<div class="hbar"><span>${esc(k)}</span><div class="track"><div class="fill" style="width:${v/cmax*100}%"></div></div><b>${money(Math.round(v))}</b></div>`).join('')}</div>`:''}
-      <form class="panel" id="exp-form" style="display:grid;gap:10px"><b style="font-size:14px">Log an expense</b>
-        <div class="grid2"><div class="field"><label for="e-amt">Amount ($)</label><input id="e-amt" type="number" min="0" step="0.01" required placeholder="12.50"></div>
-        <div class="field"><label for="e-cat">Type</label><select id="e-cat"><option>Food</option><option>Transport</option><option>Tickets</option><option>Other</option></select></div></div>
-        <button class="btn ghost block" type="submit">Add to today</button></form></div>
-    <div class="section"><div class="eyebrow">How credits work</div><div class="panel"><table class="rules"><tbody>
-      <tr><td>Slept 7–8 hours</td><td class="t-good">+10</td></tr>
-      <tr><td>Slept under 6 hours</td><td class="t-bad">−10</td></tr>
-      <tr><td>Workout 30+ min (15–29 min: +5)</td><td class="t-good">+10</td></tr>
-      <tr><td>Workout event</td><td class="t-good">+10</td></tr>
-      <tr><td>Meditation or sleep workshop</td><td class="t-good">+5</td></tr>
-      <tr><td>Light drinking</td><td class="t-bad">−10</td></tr>
-      <tr><td>Heavy drinking</td><td class="t-bad">−20</td></tr>
-      <tr><td>Ends after 11:30 PM</td><td class="t-bad">−5</td></tr>
-    </tbody></table><p class="small muted" style="margin-top:10px">Each day your score eases ${REVERT*100}% back toward your baseline, so one great or rough day doesn't define the week.</p></div></div>`;
+    </div>
+`;
 }
 const prog = $('#page-progress');
 prog.addEventListener('click', e => {
@@ -1312,7 +1416,7 @@ function renderPremium(){
   if(!state.premium){
     el.innerHTML = `
       <div class="section"><div class="promo">
-        <div class="eyebrow" style="color:#C9B6F2">Swipewell Premium</div>
+        <div class="eyebrow" style="color:#C9B6F2">BWell Premium</div>
         <h2 style="margin-top:6px">Find your people. Set goals that fit you.</h2>
         <p>Premium matches you with students who share your interests and shows which events they're going to.</p>
         <ul>
@@ -1468,7 +1572,7 @@ $('#overlay').addEventListener('click', e => { if(e.target.id==='overlay' && !$(
 function openOnboarding(retake){
   const p = state.profile;
   openModal(`
-    <div class="promo" style="margin:-4px -4px 0;padding:18px"><div class="eyebrow" style="color:#C9B6F2">Welcome to Swipewell</div>
+    <div class="promo" style="margin:-4px -4px 0;padding:18px"><div class="eyebrow" style="color:#C9B6F2">Welcome to BWell</div>
       <h2 style="margin-top:6px;font-size:25px">${retake?'Update your survey':"Let's set your starting score"}</h2>
       <p>Your answers set the baseline your score drifts back toward, and the floor the app won't let you drop under.</p></div>
     <div class="q"><div class="field"><label for="o-name">What should we call you?</label><input id="o-name" value="${esc(p.name)}"></div></div>
@@ -1480,17 +1584,21 @@ function openOnboarding(retake){
       <input type="range" id="o-wm" min="0" max="120" step="5" value="${p.workoutMins}"></div>
     <div class="q"><div class="row-between"><b>Drinks per week</b><output id="o-dr-out"></output></div>
       <input type="range" id="o-dr" min="0" max="15" step="1" value="${p.drinksPerWeek}"></div>
+    <div class="q"><b>What matters to you right now?</b><div class="hint">Sets which events show up as high, moderate or low priority (7+ high, 4-6 moderate, 0-3 low).</div></div>
+    ${[['ps','Social','social'],['pp','Professional','professional'],['pa','Academics','academics'],['ph','Health & wellness','health']].map(([id,lab,k]) => `<div class="q"><div class="row-between"><b>${lab}</b><output id="o-${id}-out"></output></div>
+      <input type="range" id="o-${id}" min="0" max="10" step="1" value="${(p.prefs||{})[k] ?? 5}" aria-label="${lab} priority"></div>`).join('')}
     <div class="q"><div class="row-between"><b>Weekly budget for going out</b><output id="o-bu-out"></output></div>
       <input type="range" id="o-bu" min="10" max="300" step="5" value="${p.budget}"></div>
     <div class="q" style="border-bottom:0"><div class="row-between"><b>Your floor</b><output id="o-fl-out"></output></div>
       <input type="range" id="o-fl" min="0" max="100" step="1" value="${p.floor}"><div class="hint">If an event would drop your score below this number, the app stops you from saying yes.</div></div>
     ${retake||!CONFIG.DEMO_MODE?'':`<label class="check"><input type="checkbox" id="o-sample" checked>Fill in five months of sample history and sync two classes from your calendars, so the charts have something to show.</label>`}
-    <div class="preview"><div><div class="eyebrow">Starting score</div><div class="small muted">Built from 60, adjusted for sleep, workouts and drinking.</div></div><div class="big-num" id="o-base"></div></div>
+    <div class="preview"><div><div class="eyebrow">Starting score</div><div class="small muted">From the Quality-of-Life model (CDC data, 427K adults), based on your sleep, workouts and drinking.</div></div><div class="big-num" id="o-base"></div></div>
     <button class="btn primary block" id="o-go"></button>
     ${retake?'<div style="text-align:center"><button class="linkbtn" id="o-cancel">Cancel</button></div>':''}`, true);
   const upd = () => {
     const q = {sleepHours:+$('#o-sleep').value, workoutDays:+$('#o-wd').value, workoutMins:+$('#o-wm').value, drinksPerWeek:+$('#o-dr').value};
     $('#o-sleep-out').textContent = q.sleepHours+' h'; $('#o-wd-out').textContent = q.workoutDays; $('#o-wm-out').textContent = q.workoutMins+' min';
+    for(const id of ['ps','pp','pa','ph']) $('#o-'+id+'-out').textContent = $('#o-'+id).value + '/10';
     $('#o-dr-out').textContent = q.drinksPerWeek; $('#o-fl-out').textContent = $('#o-fl').value; $('#o-bu-out').textContent = '$'+$('#o-bu').value;
     const b = baselineFrom(q); $('#o-base').textContent = b; $('#o-go').textContent = retake ? `Save · baseline ${b}` : `Start at ${b}`;
   };
@@ -1500,7 +1608,8 @@ function openOnboarding(retake){
     const p = state.profile;
     p.name = $('#o-name').value.trim() || 'You';
     p.sleepHours=+$('#o-sleep').value; p.workoutDays=+$('#o-wd').value; p.workoutMins=+$('#o-wm').value; p.drinksPerWeek=+$('#o-dr').value; p.floor=+$('#o-fl').value; p.budget=+$('#o-bu').value;
-    state.baseline = baselineFrom(p);
+    p.prefs = {social:+$('#o-ps').value, professional:+$('#o-pp').value, academics:+$('#o-pa').value, health:+$('#o-ph').value};
+    state.baseline = baselineFrom(p); recomputeCredits();
     if(!retake){ state.startDay = TODAY; if($('#o-sample')?.checked) seedSample(); state.onboarded = true; }
     save(); closeModal(); renderAll();
     if(!retake) setTimeout(()=>openCheckin(false), 250);

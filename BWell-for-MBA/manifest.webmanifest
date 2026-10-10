@@ -1,6 +1,6 @@
 {
-  "name": "Swipewell",
-  "short_name": "Swipewell",
+  "name": "BWell",
+  "short_name": "BWell",
   "description": "Swipe through campus events, keep a health score, and track sleep, workouts and spending.",
   "start_url": "./",
   "scope": "./",

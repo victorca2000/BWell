@@ -1,0 +1,687 @@
+event_name,date,start_time,end_time,location,distance_mi,current_attendees,price,hosted_by,category,source,setting,contains_drinking,link,description
+J.P. Morgan Coffee Chats,2026-12-09,09:00,10:00,"Kellogg Global Hub, 2410",,26,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-038,Sign up for 20-minute coffee chats with J.P. Morgan recruiters. Business casual.
+Music Club Skills Workshop,2026-12-09,17:00,18:30,"Kellogg Global Hub, 2410",,14,0.0,Music Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-049,Hands-on workshop run by second-year Music Club members.
+Tech Club Morning Workout,2026-12-09,07:30,08:08,Lakefront Trail,,23,0.0,Tech Club,Fitness,CampusGroups,Outdoor,false,https://campusgroups.example.edu/events/CG-086,Get active with the Tech Club. All levels welcome.
+Tesla Case Interview Prep,2026-12-07,17:30,18:30,"Kellogg Global Hub, 2410",,56,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-040,Live case practice led by Tesla consultants. Limited to 40 students.
+Nike Corporate Presentation,2026-12-07,12:15,13:15,"Kellogg Global Hub, L120",,68,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-065,"Hear from Nike alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Soccer Club Kickoff,2026-12-07,12:15,13:45,"Kellogg Global Hub, L110",,67,0.0,Soccer Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-002,Meet the Soccer Club leadership and learn about this year's events. Pizza provided.
+Tech Club Skills Workshop,2026-12-06,17:00,18:30,"Kellogg Global Hub, L120",,58,0.0,Tech Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-038,Hands-on workshop run by second-year Tech Club members.
+Women's Business Association Social at Evanston Pub,2026-12-06,19:00,21:00,"Evanston, IL",,15,0.0,Women's Business Association,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-074,Casual Women's Business Association happy hour. First round of drinks on the club.
+CMC: Resume Review Workshop,2026-12-05,12:15,13:15,"Kellogg Global Hub, L110",,62,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-058,Career Management Center session: resume review workshop. Bring a laptop.
+Real Estate Club Speaker Series,2026-12-04,12:15,13:45,"Kellogg Global Hub, Atrium",,87,0.0,Real Estate Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-017,Fireside chat with an industry leader hosted by the Real Estate Club.
+PepsiCo Corporate Presentation,2026-12-03,12:15,13:15,"Kellogg Global Hub, 3301",,140,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-035,"Hear from PepsiCo alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Google Corporate Presentation,2026-12-03,12:15,13:15,"Kellogg Global Hub, 3301",,107,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-039,"Hear from Google alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Culinary Club Kickoff,2026-12-03,12:15,13:45,"Kellogg Global Hub, L110",,106,0.0,Culinary Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-047,Meet the Culinary Club leadership and learn about this year's events. Pizza provided.
+BCG Case Interview Prep,2026-12-02,17:30,18:30,"Kellogg Global Hub, 1410",,98,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-044,Live case practice led by BCG consultants. Limited to 40 students.
+TGIF,2026-12-02,17:00,19:00,"Kellogg Global Hub, Atrium",,49,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-022,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+CMC: Behavioral Interview Bootcamp,2026-12-01,12:15,13:15,"Kellogg Global Hub, 1410",,41,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-054,Career Management Center session: behavioral interview bootcamp. Bring a laptop.
+Latin American Business Club Social at Evanston Pub,2026-12-01,19:00,21:00,"Evanston, IL",,13,0.0,Latin American Business Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-019,Casual Latin American Business Club happy hour. First round of drinks on the club.
+Adobe Coffee Chats,2026-11-30,09:00,10:00,"Kellogg Global Hub, Atrium",,78,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-009,Sign up for 20-minute coffee chats with Adobe recruiters. Business casual.
+Kraft Heinz Corporate Presentation,2026-11-28,12:15,13:15,"Kellogg Global Hub, 2410",,27,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-029,"Hear from Kraft Heinz alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Women's Business Association Skills Workshop,2026-11-27,17:00,18:30,"Kellogg Global Hub, 1410",,14,0.0,Women's Business Association,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-010,Hands-on workshop run by second-year Women's Business Association members.
+Asian Business Association Speaker Series,2026-11-26,12:15,13:45,"Kellogg Global Hub, 3301",,139,0.0,Asian Business Association,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-080,Fireside chat with an industry leader hosted by the Asian Business Association.
+Culinary Club Skills Workshop,2026-11-25,17:00,18:30,"Kellogg Global Hub, 2410",,51,0.0,Culinary Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-031,Hands-on workshop run by second-year Culinary Club members.
+Real Estate Club Skills Workshop,2026-11-25,17:00,18:30,"Kellogg Global Hub, L120",,109,0.0,Real Estate Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-061,Hands-on workshop run by second-year Real Estate Club members.
+CMC: Resume Review Workshop,2026-11-24,12:15,13:15,"Kellogg Global Hub, Atrium",,91,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-081,Career Management Center session: resume review workshop. Bring a laptop.
+Morgan Stanley Case Interview Prep,2026-11-23,17:30,18:30,"Kellogg Global Hub, L120",,33,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-042,Live case practice led by Morgan Stanley consultants. Limited to 40 students.
+CMC: Salary Negotiation Workshop,2026-11-21,12:15,13:15,"Kellogg Global Hub, L120",,60,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-031,Career Management Center session: salary negotiation workshop. Bring a laptop.
+CMC: Cover Letter Clinic,2026-11-21,12:15,13:15,"Kellogg Global Hub, 2410",,78,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-079,Career Management Center session: cover letter clinic. Bring a laptop.
+Women's Business Association Morning Workout,2026-11-21,07:30,08:26,Lakefill Fields,,114,0.0,Women's Business Association,Fitness,CampusGroups,Outdoor,false,https://campusgroups.example.edu/events/CG-012,Get active with the Women's Business Association. All levels welcome.
+Music Club Morning Workout,2026-11-21,07:30,08:05,Lakefill Fields,,87,0.0,Music Club,Fitness,CampusGroups,Outdoor,false,https://campusgroups.example.edu/events/CG-083,Get active with the Music Club. All levels welcome.
+Blackstone Coffee Chats,2026-11-19,09:00,10:00,"Kellogg Global Hub, L120",,45,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-008,Sign up for 20-minute coffee chats with Blackstone recruiters. Business casual.
+Real Estate Club Morning Workout,2026-11-19,07:30,08:27,Henry Crown Sports Pavilion,,65,0.0,Real Estate Club,Fitness,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-050,Get active with the Real Estate Club. All levels welcome.
+CMC: Behavioral Interview Bootcamp,2026-11-17,12:15,13:15,"Kellogg Global Hub, 3301",,6,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-075,Career Management Center session: behavioral interview bootcamp. Bring a laptop.
+Goldman Sachs Case Interview Prep,2026-11-16,17:30,18:30,"Kellogg Global Hub, 1410",,49,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-030,Live case practice led by Goldman Sachs consultants. Limited to 40 students.
+BCG Case Interview Prep,2026-11-15,17:30,18:30,"Kellogg Global Hub, L110",,112,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-011,Live case practice led by BCG consultants. Limited to 40 students.
+CMC: Salary Negotiation Workshop,2026-11-15,12:15,13:15,"Kellogg Global Hub, L110",,18,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-049,Career Management Center session: salary negotiation workshop. Bring a laptop.
+TGIF,2026-11-13,17:00,19:00,"Kellogg Global Hub, Atrium",,80,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-048,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Chicago Tech Trek,2026-11-12,08:00,16:00,Chicago,,79,150.0,Career Management Center,Career,CMC,Outdoor,false,https://cmc.example.edu/events/CMC-083,Visit firms in Chicago over two days. Travel and hotel partially subsidized.
+Asian Business Association Kickoff,2026-11-12,12:15,13:45,"Kellogg Global Hub, 1410",,74,0.0,Asian Business Association,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-035,Meet the Asian Business Association leadership and learn about this year's events. Pizza provided.
+Board Game Club Kickoff,2026-11-12,12:15,13:45,"Kellogg Global Hub, 1410",,68,0.0,Board Game Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-045,Meet the Board Game Club leadership and learn about this year's events. Pizza provided.
+Nike Corporate Presentation,2026-11-11,12:15,13:15,"Kellogg Global Hub, L110",,101,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-067,"Hear from Nike alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+TGIF,2026-11-11,17:00,19:00,"Kellogg Global Hub, Atrium",,74,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-085,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+CMC: Resume Review Workshop,2026-11-08,12:15,13:15,"Kellogg Global Hub, 3301",,63,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-064,Career Management Center session: resume review workshop. Bring a laptop.
+Music Club Kickoff,2026-11-08,12:15,13:45,"Kellogg Global Hub, L110",,15,0.0,Music Club,Arts,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-039,Meet the Music Club leadership and learn about this year's events. Pizza provided.
+TGIF,2026-11-08,17:00,19:00,"Kellogg Global Hub, Atrium",,76,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-044,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Bain Case Interview Prep,2026-11-07,17:30,18:30,"Kellogg Global Hub, Atrium",,14,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-013,Live case practice led by Bain consultants. Limited to 40 students.
+Finance Club Skills Workshop,2026-11-07,17:00,18:30,"Kellogg Global Hub, 2410",,148,0.0,Finance Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-026,Hands-on workshop run by second-year Finance Club members.
+Women's Business Association Kickoff,2026-11-07,12:15,13:45,"Kellogg Global Hub, L110",,77,0.0,Women's Business Association,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-034,Meet the Women's Business Association leadership and learn about this year's events. Pizza provided.
+Marketing Club Skills Workshop,2026-11-06,17:00,18:30,"Kellogg Global Hub, 3301",,40,0.0,Marketing Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-076,Hands-on workshop run by second-year Marketing Club members.
+Comedy Club Skills Workshop,2026-11-05,17:00,18:30,"Kellogg Global Hub, L120",,99,0.0,Comedy Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-021,Hands-on workshop run by second-year Comedy Club members.
+Microsoft Corporate Presentation,2026-11-04,12:15,13:15,"Kellogg Global Hub, 3301",,34,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-066,"Hear from Microsoft alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Salesforce Corporate Presentation,2026-11-04,12:15,13:15,"Kellogg Global Hub, 1410",,28,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-087,"Hear from Salesforce alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+TGIF,2026-11-03,17:00,19:00,"Kellogg Global Hub, Atrium",,90,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-041,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+CMC: Salary Negotiation Workshop,2026-11-02,12:15,13:15,"Kellogg Global Hub, L120",,107,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-077,Career Management Center session: salary negotiation workshop. Bring a laptop.
+PepsiCo Case Interview Prep,2026-11-01,17:30,18:30,"Kellogg Global Hub, Atrium",,12,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-001,Live case practice led by PepsiCo consultants. Limited to 40 students.
+CMC: Salary Negotiation Workshop,2026-11-01,12:15,13:15,"Kellogg Global Hub, 3301",,17,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-021,Career Management Center session: salary negotiation workshop. Bring a laptop.
+McKinsey Corporate Presentation,2026-11-01,12:15,13:15,"Kellogg Global Hub, 2410",,27,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-041,"Hear from McKinsey alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+CMC: LinkedIn Profile Lab,2026-11-01,12:15,13:15,"Kellogg Global Hub, 1410",,66,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-086,Career Management Center session: linkedin profile lab. Bring a laptop.
+Latin American Business Club Speaker Series,2026-11-01,12:15,13:45,"Kellogg Global Hub, L110",,116,0.0,Latin American Business Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-060,Fireside chat with an industry leader hosted by the Latin American Business Club.
+TGIF,2026-10-31,17:00,19:00,"Kellogg Global Hub, Atrium",,28,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-016,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Women's Business Association Social at Bat 17,2026-10-31,19:00,21:00,"Evanston, IL",,40,10.0,Women's Business Association,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-070,Casual Women's Business Association happy hour. First round of drinks on the club.
+The Bone Zone: Halloween Eve,2026-10-30,21:00,00:00,TBA,,179,60.0,Partiful host,Nightlife,Partiful,Indoor,true,https://go.partiful.com/fA8vFQcH,"Halloweekend is coming 👀🎃 don’t miss out on a scary good time… and an open bar 👻🍻
+
+Costume required, duh. 😈
+
+Details:
+🦴$60 for guaranteed entry + open bar from 9pm to 12am.
+🦴Includes well drinks, beer, wine, and NA drinks.
+🦴Must venmo to get added to the list.
+🦴Join the waitlist once we hit 150 and we’ll try to increase capacity
+
+Note: If you are a Zelle person, pls Zelle Mia (972-979-8584) and put in your RSVP comment that you did Zelle so we can track!!
+
+Venmo: @miahirsch
+
+See you there ☠️"
+Asian Business Association Speaker Series,2026-10-30,12:15,13:45,"Kellogg Global Hub, L120",,79,0.0,Asian Business Association,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-068,Fireside chat with an industry leader hosted by the Asian Business Association.
+Salesforce Corporate Presentation,2026-10-28,12:15,13:15,"Kellogg Global Hub, 2410",,98,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-078,"Hear from Salesforce alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+TGIF,2026-10-28,17:00,19:00,"Kellogg Global Hub, Atrium",,84,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-073,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+TGIF,2026-10-28,17:00,19:00,"Kellogg Global Hub, Atrium",,93,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-082,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Tesla Corporate Presentation,2026-10-27,12:15,13:15,"Kellogg Global Hub, L120",,60,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-025,"Hear from Tesla alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Finance Club Skills Workshop,2026-10-27,17:00,18:30,"Kellogg Global Hub, Atrium",,50,0.0,Finance Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-037,Hands-on workshop run by second-year Finance Club members.
+Salesforce Corporate Presentation,2026-10-26,12:15,13:15,"Kellogg Global Hub, 2410",,67,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-033,"Hear from Salesforce alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Blackstone Networking Reception,2026-10-26,18:00,20:00,"Kellogg Global Hub, Atrium",,10,0.0,Career Management Center,Career,CMC,Indoor,true,https://cmc.example.edu/events/CMC-046,"Evening reception with the Blackstone recruiting team. Light bites, beer and wine provided."
+Marketing Club Social at Prairie Moon,2026-10-26,19:00,21:00,"Evanston, IL",,63,15.0,Marketing Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-063,Casual Marketing Club happy hour. First round of drinks on the club.
+PepsiCo Coffee Chats,2026-10-25,09:00,10:00,"Kellogg Global Hub, 1410",,101,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-012,Sign up for 20-minute coffee chats with PepsiCo recruiters. Business casual.
+TGIF,2026-10-25,17:00,19:00,"Kellogg Global Hub, Atrium",,108,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-064,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+CMC: Resume Review Workshop,2026-10-23,12:15,13:15,"Kellogg Global Hub, 2410",,104,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-080,Career Management Center session: resume review workshop. Bring a laptop.
+Morgan Stanley Corporate Presentation,2026-10-22,12:15,13:15,"Kellogg Global Hub, L110",,65,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-005,"Hear from Morgan Stanley alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Tesla Corporate Presentation,2026-10-21,12:15,13:15,"Kellogg Global Hub, L110",,35,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-024,"Hear from Tesla alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+TGIF,2026-10-20,17:00,19:00,"Kellogg Global Hub, Atrium",,16,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-079,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+McKinsey Corporate Presentation,2026-10-19,12:15,13:15,"Kellogg Global Hub, 1410",,56,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-073,"Hear from McKinsey alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Saskia 27 bday,2026-10-17,20:00,23:00,TBA,,14,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/B9tBXRhx,"I am spending my actual bday in Rwanda, but when I get back I would love to celebrate with you! 
+
+There will be arepas and tres leches at my apartment (426 Tompkins Ave, 6H)  at 9 and we will wander over to Frogs Wine Bar at 10. +1s are welcome."
+CMC: Networking 101,2026-10-17,12:15,13:15,"Kellogg Global Hub, 2410",,98,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-007,Career Management Center session: networking 101. Bring a laptop.
+KWAILAND REUNION,2026-10-16,18:00,21:00,"Greenlight Korean Pub & Karaoke, 2519 W Peterson Ave, Chicago, IL",,6,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/imQsEKlE,"FULL KWAILAND REUNION. We are coming back doing what we do best…KARAOKE (not at a gentlemen’s club)
+
+Mr. Tom may or may not be there…khop khun krab!"
+Kraft Heinz Case Interview Prep,2026-10-15,17:30,18:30,"Kellogg Global Hub, 2410",,67,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-051,Live case practice led by Kraft Heinz consultants. Limited to 40 students.
+Women's Business Association Kickoff,2026-10-14,12:15,13:45,"Kellogg Global Hub, 2410",,70,0.0,Women's Business Association,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-005,Meet the Women's Business Association leadership and learn about this year's events. Pizza provided.
+Women's Business Association Social at Bat 17,2026-10-13,19:00,21:00,"Evanston, IL",,108,15.0,Women's Business Association,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-084,Casual Women's Business Association happy hour. First round of drinks on the club.
+Marketing Club Kickoff,2026-10-12,12:15,13:45,"Kellogg Global Hub, Atrium",,71,0.0,Marketing Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-055,Meet the Marketing Club leadership and learn about this year's events. Pizza provided.
+TGIF,2026-10-12,17:00,19:00,"Kellogg Global Hub, Atrium",,105,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-067,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Entrepreneurship Club Tournament,2026-10-08,07:30,09:56,Henry Crown Sports Pavilion,,105,0.0,Entrepreneurship Club,Fitness,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-001,Get active with the Entrepreneurship Club. All levels welcome.
+Running Club Social at Prairie Moon,2026-10-08,19:00,21:00,"Evanston, IL",,41,0.0,Running Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-036,Casual Running Club happy hour. First round of drinks on the club.
+Bain Corporate Presentation,2026-10-07,12:15,13:15,"Kellogg Global Hub, L110",,8,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-063,"Hear from Bain alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Music Club Kickoff,2026-10-07,12:15,13:45,"Kellogg Global Hub, 1410",,84,0.0,Music Club,Arts,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-052,Meet the Music Club leadership and learn about this year's events. Pizza provided.
+Belize x Thailand Wine Down 🍷😴,2026-10-06,19:00,22:00,"E2 Apartments, 1890 Maple Ave, Evanston, IL",,7,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/XviHCSrY,"Wine Down 🍷
+
+Trade the going-out clothes for your comfiest fit — think sweatsuits, pajamas, and whatever you'd actually want to be wearing on your couch. Bring a bottle of wine to share (any kind, any price point, no judgment) and get ready to unwind, catch up, and sip the night away.
+
+The details:
+
+	•	Dress code: Cozy only — pajamas, sweat sets, slippers, robes... lean into it
+	•	Bring: A bottle of wine (red, white, rosé, bubbly, your call)
+	•	Vibe: Low-key, comfortable, good conversation over good wine
+
+No heels, no going-out tops — just comfort, wine, and good company. See you on the couch. 🕯️"
+McKinsey Coffee Chats,2026-10-05,09:00,10:00,"Kellogg Global Hub, Atrium",,10,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-057,Sign up for 20-minute coffee chats with McKinsey recruiters. Business casual.
+Microsoft Coffee Chats,2026-10-04,09:00,10:00,"Kellogg Global Hub, L120",,110,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-037,Sign up for 20-minute coffee chats with Microsoft recruiters. Business casual.
+Thailand Goes Gay,2026-10-03,20:00,23:00,"1590 Elmwood Ave Unit 808, Evanston, IL",,12,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/IboeZva6,Sexy clothes only
+Soccer Club Speaker Series,2026-10-03,12:15,13:45,"Kellogg Global Hub, L120",,34,0.0,Soccer Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-054,Fireside chat with an industry leader hosted by the Soccer Club.
+Nike Corporate Presentation,2026-10-02,12:15,13:15,"Kellogg Global Hub, L120",,95,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-020,"Hear from Nike alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Real Estate Club Skills Workshop,2026-10-02,17:00,18:30,"Kellogg Global Hub, 2410",,19,0.0,Real Estate Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-033,Hands-on workshop run by second-year Real Estate Club members.
+Culinary Club Social at Tapas Barcelona,2026-10-02,19:00,21:00,"Evanston, IL",,15,10.0,Culinary Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-069,Casual Culinary Club happy hour. First round of drinks on the club.
+TGIF,2026-10-01,17:00,19:00,"Kellogg Global Hub, Atrium",,110,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-032,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Wine Club Tasting,2026-10-01,18:30,20:30,"Kellogg Global Hub, 1410",,61,25.0,Wine Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-066,Guided tasting of six wines from a featured region. Cheese pairings included.
+Carbonara Off,2026-09-30,18:30,21:30,e2 813W,,20,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/YPuH3UhB,"IT’S TIME. Who can make a better carbonara? A born and bred Italian man OR a Florida man with an Italian girlfriend (we have recently confirmed that she IS real).
+
+Both men claim to be the best…. But there can only be one winner. Who will earn the title of carbonara king?? There’s only one way to find out!!! 
+
+Please bring an app, dessert, or wine (if you’re psycho enough to want to drink… respect) to contribute to our family debrief of the craziest fall quarter event at Kellogg (white party)."
+pajamas & pitchers bday celebration,2026-09-30,20:30,23:30,"The Scholar rooftop, 1590 Elmwood Ave, Evanston, IL",,43,0.0,Partiful host,Social,Partiful,Outdoor,true,https://go.partiful.com/GwCFnoI9,"you’ve had all day to recover from white party! now it’s time to throw on your cozy pj’s and grab any container/vessel filled with your favorite drink so we can celebrate me being old! #themedbirthdaysareback
+
+BYOB but I’ll have some pitchers of fun drinks and snacks🍻🤪"
+Healthcare Club Social at Tapas Barcelona,2026-09-30,19:00,21:00,"Evanston, IL",,106,10.0,Healthcare Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-015,Casual Healthcare Club happy hour. First round of drinks on the club.
+Google Networking Reception,2026-09-29,18:00,20:00,"Kellogg Global Hub, Atrium",,97,0.0,Career Management Center,Career,CMC,Indoor,true,https://cmc.example.edu/events/CMC-016,"Evening reception with the Google recruiting team. Light bites, beer and wine provided."
+Kearney Networking Reception,2026-09-29,18:00,20:00,"Kellogg Global Hub, Atrium",,74,0.0,Career Management Center,Career,CMC,Indoor,true,https://cmc.example.edu/events/CMC-022,"Evening reception with the Kearney recruiting team. Light bites, beer and wine provided."
+New York CPG Trek,2026-09-29,08:00,16:00,New York,,78,75.0,Career Management Center,Career,CMC,Outdoor,false,https://cmc.example.edu/events/CMC-052,Visit firms in New York over two days. Travel and hotel partially subsidized.
+Google Coffee Chats,2026-09-29,09:00,10:00,"Kellogg Global Hub, L110",,10,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-076,Sign up for 20-minute coffee chats with Google recruiters. Business casual.
+Entrepreneurship Club Kickoff,2026-09-29,12:15,13:45,"Kellogg Global Hub, L110",,99,0.0,Entrepreneurship Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-009,Meet the Entrepreneurship Club leadership and learn about this year's events. Pizza provided.
+Comedy Club Kickoff,2026-09-29,12:15,13:45,"Kellogg Global Hub, L110",,68,0.0,Comedy Club,Arts,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-059,Meet the Comedy Club leadership and learn about this year's events. Pizza provided.
+Entrepreneurship Club Speaker Series,2026-09-28,12:15,13:45,"Kellogg Global Hub, Atrium",,116,0.0,Entrepreneurship Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-081,Fireside chat with an industry leader hosted by the Entrepreneurship Club.
+Finance Club Speaker Series,2026-09-27,12:15,13:45,"Kellogg Global Hub, L120",,83,0.0,Finance Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-043,Fireside chat with an industry leader hosted by the Finance Club.
+MYSTERY X THAILAND X GEORGIA,2026-09-26,16:00,19:00,"1022 Emerson St E2 Townhouse 1022, Evanston, IL",,11,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/lrYvpYUy,🛥️🛥️🛥️🛥️🛥️
+CMC: Cover Letter Clinic,2026-09-26,12:15,13:15,"Kellogg Global Hub, L120",,25,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-006,Career Management Center session: cover letter clinic. Bring a laptop.
+Good Vibes Only in Logan Square,2026-09-25,22:00,01:00,"Easy Does It, 2354 N Milwaukee Ave, Chicago, IL",,66,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/e0Br1YVU,Come dance the night away in Logan Square. Starting night at Easy Does It @ 10PM for good vibes only 🪩🪩
+CMC: Behavioral Interview Bootcamp,2026-09-25,12:15,13:15,"Kellogg Global Hub, 3301",,38,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-028,Career Management Center session: behavioral interview bootcamp. Bring a laptop.
+Nike Networking Reception,2026-09-24,18:00,20:00,"Kellogg Global Hub, Atrium",,96,0.0,Career Management Center,Career,CMC,Indoor,true,https://cmc.example.edu/events/CMC-018,"Evening reception with the Nike recruiting team. Light bites, beer and wine provided."
+Apple Corporate Presentation,2026-09-24,12:15,13:15,"Kellogg Global Hub, Atrium",,17,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-032,"Hear from Apple alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+KWAILAND Supper Club,2026-09-23,19:45,22:45,"The Park Evanston, 1630 Chicago Ave Apt 1212, Evanston, IL",,22,0.0,Partiful host,Social,Partiful,Outdoor,false,https://go.partiful.com/fF9xoyYA,"Pull up for the yummiest and silliest KWAILAND potluck there ever was. First week of class deserves an extra big meal. Get hungry. NOM NOM
+
+Please add you dish here: https://nuwildcat-my.sharepoint.com/:x:/r/personal/eey3627_ads_northwestern_edu/Documents/KWAILAND%20Potluck.xlsx?d=wea15c90864184f018ba7c16fe3455250&csf=1&web=1&e=EhUhso"
+Board Game Club Social at Prairie Moon,2026-09-23,19:00,21:00,"Evanston, IL",,67,15.0,Board Game Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-007,Casual Board Game Club happy hour. First round of drinks on the club.
+Mexico Independence Day Party,2026-09-22,18:30,21:30,"E2 Apartments, 1890 Maple Ave 4th floor patio, Evanston, IL",,0,10.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/w5KG50gQ,"K-Latam presents: Mexico’s Independence Day Party 🇲🇽
+
+Now that pre term is over, and that WE’RE BACK in Evanston, let’s get ready to party like Mexicans know how. FYI: it’s dangerous, but you won’t regret it. 
+
+Do you know what that means? Not only will  you feel like you’re in Mexico for a few hours, you’ll get to take shots of actual good tequila while listening to a real Mariachi band. 
+
+Tequila and mezcal will be flowing on a first-come, first-serve basis, but we highly encourage you to BYOB to keep the “fiesta” going all night!
+
+Price: $10 per person for the drinks and Mariachi live band! (Venmo: julian-escallon / Zelle: 3054409646)"
+Healthcare Club Pickup Game,2026-09-21,07:30,08:54,Lakefill Fields,,34,0.0,Healthcare Club,Fitness,CampusGroups,Outdoor,false,https://campusgroups.example.edu/events/CG-040,Get active with the Healthcare Club. All levels welcome.
+Kraft Heinz Corporate Presentation,2026-09-20,12:15,13:15,"Kellogg Global Hub, 3301",,55,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-043,"Hear from Kraft Heinz alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+OFF CAMPUS,2026-09-19,14:00,17:00,"Casa Amor, 530 S Ridge Rd, Lake Forest, IL",,0,40.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/I2m8vWI4,"King of the land (Ireland, that is), Nick @ Nite, has graciously offered his home as a darty destination for us on September 19!!!! We are SOOOO excited and you should be too. Lots of logistics involved here so please read below: 
+
+THE THEME IS PLAYA DE COLOR WARS. Throw on your best beach attire and when you arrive we will give you a special item that will indicate your team’s color. Teams will be announced on Thursday 9/16.
+
+For more important logistics, please see below.￼
+
+1. We will pick up alcohol that we will venmo request for. Please expect a venmo for ~$30-40 each (this includes food - see below). Expect vodka, tequila, beer, seltzer, and surfsides. Plus mixers. Plus cups. If your dream drink isn’t on that list, please BYO. 
+
+2. There will be food! This is included in the Venmo. TBD if we will be grilling or doing pizza. Same thing goes here - if either of those do not appeal to you, please BYO.  
+
+3. There will be games involved. Each team will compete against each other and the winner has bragging rights until the next time someone wants to host a games darty. That could be a long time. Come with your game faces ON.
+
+4. We will darty at Nicks til the early eve. From there, we will take party busses back to Evanston (please note this is also part of the venmo - will likely be ~$40 each) where we will drop bags and then continue on our way to a bar that is yet to be determined."
+Running Club Social at Bat 17,2026-09-19,19:00,21:00,"Evanston, IL",,18,15.0,Running Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-075,Casual Running Club happy hour. First round of drinks on the club.
+Champagne & Shackles: Chile x Thailand,2026-09-18,19:00,22:00,"1022 Emerson St, Evanston, IL",,44,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/JUAW8pcD,
+CMC: Networking 101,2026-09-18,12:15,13:15,"Kellogg Global Hub, 3301",,59,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-069,Career Management Center session: networking 101. Bring a laptop.
+Morgan Stanley Corporate Presentation,2026-09-17,12:15,13:15,"Kellogg Global Hub, 2410",,36,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-053,"Hear from Morgan Stanley alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+TGIF,2026-09-17,17:00,19:00,"Kellogg Global Hub, Atrium",,128,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-029,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Camilla’s 26!,2026-09-15,21:00,00:00,"E2 West Tower - 1881 Oak Ave, apt 1106W",,27,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://go.partiful.com/GxsHTnl4,"Hosting a small get-together to celebrate my bday eve ! Come eat some cake and have some drinks at my apartment :) 
+
+I will bake the cake and have some drinks, but please BYOB as well.
+
+If you want to bring a plus-one, just let me know. The apartment isn’t huge but we will squeeze. 
+
+Can’t wait to see you!"
+Time Zone Party,2026-09-15,18:00,21:00,"E2 Patio, 1890 Maple Ave, Evanston, IL",,40,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/v4jacLj7,"Welcome to the timezone party - Sweden x Amazing Race (Hong Kong) x Thailand x Poland!!!!
+
+It’s time for bed in Europe, and time for morning coffee in Asia 💤💤💤🥱🥱🥱
+
+Meet us poolside at E2 for a few drinks and celebrate pre-term being overrr 🛌🛌🛌"
+CMC: Cover Letter Clinic,2026-09-15,12:15,13:15,"Kellogg Global Hub, Atrium",,94,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-014,Career Management Center session: cover letter clinic. Bring a laptop.
+J.P. Morgan Corporate Presentation,2026-09-15,12:15,13:15,"Kellogg Global Hub, 2410",,17,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-085,"Hear from J.P. Morgan alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Amazon Coffee Chats,2026-09-14,09:00,10:00,"Kellogg Global Hub, 3301",,38,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-017,Sign up for 20-minute coffee chats with Amazon recruiters. Business casual.
+CMC: Behavioral Interview Bootcamp,2026-09-14,12:15,13:15,"Kellogg Global Hub, 2410",,89,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-050,Career Management Center session: behavioral interview bootcamp. Bring a laptop.
+Finance Club Tournament,2026-09-14,07:30,10:00,Henry Crown Sports Pavilion,,95,0.0,Finance Club,Fitness,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-057,Get active with the Finance Club. All levels welcome.
+Chicken Crawl with Thai x Brazil!,2026-09-13,14:00,17:00,TBA,,28,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/E6GVhgpP,"🚨📢 LISTEN UP KWESTEE BADDIES🚨📢
+
+We are gathering for a Lincoln Park CHICKEN CRAWLLL!! If you are unfamiliar with the rules you can find them here (https://chickenru.sh/info/the-chicken-chase/) but basically we are MIXING🇧🇷🇹🇭, DRINKING🫪🍺, and finding the CHICKENS 🐔!!!
+
+ We are gathering at the Davis station around 1:30pm followed by a list of LP bars (coming soon!!)
+
+Rumor has it we are the most fun kwests so let’s keep up our reputation and have the BEST time ever!!!!🥂💃🍷🍻🕺"
+Nike Corporate Presentation,2026-09-13,12:15,13:15,"Kellogg Global Hub, L120",,37,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-059,"Hear from Nike alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Energy Club Skills Workshop,2026-09-13,17:00,18:30,"Kellogg Global Hub, Atrium",,64,0.0,Energy Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-003,Hands-on workshop run by second-year Energy Club members.
+Golf Club 5K Run,2026-09-13,07:30,08:02,Henry Crown Sports Pavilion,,78,0.0,Golf Club,Fitness,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-020,Get active with the Golf Club. All levels welcome.
+Kearney Networking Reception,2026-09-12,18:00,20:00,"Kellogg Global Hub, Atrium",,64,0.0,Career Management Center,Career,CMC,Indoor,true,https://cmc.example.edu/events/CMC-060,"Evening reception with the Kearney recruiting team. Light bites, beer and wine provided."
+CMC: Behavioral Interview Bootcamp,2026-09-12,12:15,13:15,"Kellogg Global Hub, Atrium",,8,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-082,Career Management Center session: behavioral interview bootcamp. Bring a laptop.
+BUDA X LATVIA X THAILAND,2026-09-11,19:30,22:30,E2 4th floor Patio,,54,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/qi37qHjZ,"Little history lesson: roughly 20,000 years ago, a civilization living in the Last Glacial Maximum (modern day China) was given a directive by their ruler: create the first written language. 2 years passed and when the ruler came to check in, 0 progress had been made. Turns the linguists had spent their budget on bottles of liquor, commencing a 730 day bender.
+
+The evil ruler devised a diabolical plan to limit the linguist’s alcohol consumption by inventing what we refer to today as a “cup”. Now, instead of taking 5 second pulls, the linguists had to moderately sip on a 16 oz, red, plastic cup.
+
+Historical Sources: minimal
+
+So, to honor the linguists of the Last Glacial Maximum, we’ll be getting hammered without the limiting nature of cups or their can + bottle cousins.
+
+Please bring literally anything to drink out of that is not a cup. Creativity is not only incentivized but required."
+Entrepreneurship Club Skills Workshop,2026-09-11,17:00,18:30,"Kellogg Global Hub, 2410",,110,0.0,Entrepreneurship Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-028,Hands-on workshop run by second-year Entrepreneurship Club members.
+Healthcare Club Kickoff,2026-09-11,12:15,13:45,"Kellogg Global Hub, L120",,15,0.0,Healthcare Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-065,Meet the Healthcare Club leadership and learn about this year's events. Pizza provided.
+Entrepreneurship Club Speaker Series,2026-09-10,12:15,13:45,"Kellogg Global Hub, L120",,53,0.0,Entrepreneurship Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-011,Fireside chat with an industry leader hosted by the Entrepreneurship Club.
+Wine Club Tasting,2026-09-10,18:30,20:30,"Kellogg Global Hub, 1410",,22,25.0,Wine Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-025,Guided tasting of six wines from a featured region. Cheese pairings included.
+Energy Club Kickoff,2026-09-10,12:15,13:45,"Kellogg Global Hub, L120",,61,0.0,Energy Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-053,Meet the Energy Club leadership and learn about this year's events. Pizza provided.
+Board Game Club Speaker Series,2026-09-09,12:15,13:45,"Kellogg Global Hub, 2410",,124,0.0,Board Game Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-056,Fireside chat with an industry leader hosted by the Board Game Club.
+Amazon Corporate Presentation,2026-09-08,12:15,13:15,"Kellogg Global Hub, 2410",,10,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-019,"Hear from Amazon alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Nike Corporate Presentation,2026-09-08,12:15,13:15,"Kellogg Global Hub, L120",,158,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-084,"Hear from Nike alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+CMC: Networking 101,2026-09-07,12:15,13:15,"Kellogg Global Hub, L110",,16,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-004,Career Management Center session: networking 101. Bring a laptop.
+Turning 30,2026-09-06,20:00,23:00,"The Park Evanston, 1630 Chicago Ave 1212, Evanston, IL",,30,0.0,Partiful host,Social,Partiful,Outdoor,true,https://go.partiful.com/W7LMXgFM,"Hey guys, turning 30 so making a small party at Park. See you there 🍻🍻🍻 #BYOB"
+Thai x South Africa BAR CRAWLL! 🍺,2026-09-06,14:30,17:30,downtown chicago!! more details coming soon,,25,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/DLyF3oQY,"To add onto our first weekend back, we’re planning a BAR CRAWL this Sunday with South AfriKWEST!!! 
+
+Reminder: we DON’T have school Monday, so naturally we have to take full advantage of the long weekend 🌝🍺
+
+Thinking an afternoon kickoff around 1 PM and going as long as your hearts desire 🥂🪩
+
+RSVP ASAP IF YOU’RE DOWN!"
+Culturemaxxing PG,2026-09-04,18:00,21:00,E2 Townhouse 7,,45,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/eNQgYlDm,"BYOB🚨
+
+Thailand, Georgia, and Argentina kwestees
+
+Please join us in this cross-continent, cross-time zone cultural extravaganza PG prior to heading to Alhambra, which is inspired by a Spanish fortress. 
+
+If your kwest was not five stars on culture, don’t worry, this PG is, along with 5 stars on social 😈  #culturemaxxing #babybirding?"
+Kraft Heinz Coffee Chats,2026-09-04,09:00,10:00,"Kellogg Global Hub, Atrium",,64,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-056,Sign up for 20-minute coffee chats with Kraft Heinz recruiters. Business casual.
+Entrepreneurship Club Kickoff,2026-09-03,12:15,13:45,"Kellogg Global Hub, L110",,146,0.0,Entrepreneurship Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-062,Meet the Entrepreneurship Club leadership and learn about this year's events. Pizza provided.
+Culinary Club Kickoff,2026-09-02,12:15,13:45,"Kellogg Global Hub, L120",,43,0.0,Culinary Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-058,Meet the Culinary Club leadership and learn about this year's events. Pizza provided.
+Music Club Social at Prairie Moon,2026-09-02,19:00,21:00,"Evanston, IL",,91,15.0,Music Club,Arts,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-077,Casual Music Club happy hour. First round of drinks on the club.
+Bain Corporate Presentation,2026-08-31,12:15,13:15,"Kellogg Global Hub, Atrium",,55,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-010,"Hear from Bain alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Deloitte Coffee Chats,2026-08-30,09:00,10:00,"Kellogg Global Hub, Atrium",,38,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-055,Sign up for 20-minute coffee chats with Deloitte recruiters. Business casual.
+Kraft Heinz Coffee Chats,2026-08-26,09:00,10:00,"Kellogg Global Hub, 3301",,82,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-045,Sign up for 20-minute coffee chats with Kraft Heinz recruiters. Business casual.
+Golf Club Skills Workshop,2026-08-26,17:00,18:30,"Kellogg Global Hub, L110",,13,0.0,Golf Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-023,Hands-on workshop run by second-year Golf Club members.
+Music Club Pickup Game,2026-08-26,07:30,08:50,Lakefill Fields,,84,0.0,Music Club,Fitness,CampusGroups,Outdoor,false,https://campusgroups.example.edu/events/CG-087,Get active with the Music Club. All levels welcome.
+CMC: Resume Review Workshop,2026-08-25,12:15,13:15,"Kellogg Global Hub, 3301",,51,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-003,Career Management Center session: resume review workshop. Bring a laptop.
+Google Coffee Chats,2026-08-25,09:00,10:00,"Kellogg Global Hub, 2410",,80,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-047,Sign up for 20-minute coffee chats with Google recruiters. Business casual.
+Consulting Club Social at Tapas Barcelona,2026-08-25,19:00,21:00,"Evanston, IL",,48,15.0,Consulting Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-008,Casual Consulting Club happy hour. First round of drinks on the club.
+Energy Club Kickoff,2026-08-25,12:15,13:45,"Kellogg Global Hub, 1410",,29,0.0,Energy Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-078,Meet the Energy Club leadership and learn about this year's events. Pizza provided.
+Blackstone Coffee Chats,2026-08-24,09:00,10:00,"Kellogg Global Hub, 3301",,72,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-015,Sign up for 20-minute coffee chats with Blackstone recruiters. Business casual.
+CMC: Networking 101,2026-08-24,12:15,13:15,"Kellogg Global Hub, L110",,122,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-026,Career Management Center session: networking 101. Bring a laptop.
+Consulting Club Social at Prairie Moon,2026-08-24,19:00,21:00,"Evanston, IL",,23,15.0,Consulting Club,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-071,Casual Consulting Club happy hour. First round of drinks on the club.
+Salesforce Coffee Chats,2026-08-23,09:00,10:00,"Kellogg Global Hub, L120",,78,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-027,Sign up for 20-minute coffee chats with Salesforce recruiters. Business casual.
+Salesforce Corporate Presentation,2026-08-23,12:15,13:15,"Kellogg Global Hub, Atrium",,148,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-068,"Hear from Salesforce alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Adobe Coffee Chats,2026-08-21,09:00,10:00,"Kellogg Global Hub, 1410",,43,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-061,Sign up for 20-minute coffee chats with Adobe recruiters. Business casual.
+San Francisco Tech Trek,2026-08-21,08:00,16:00,San Francisco,,41,150.0,Career Management Center,Career,CMC,Outdoor,false,https://cmc.example.edu/events/CMC-062,Visit firms in San Francisco over two days. Travel and hotel partially subsidized.
+TGIF,2026-08-21,17:00,19:00,"Kellogg Global Hub, Atrium",,38,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-004,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Wine Club Speaker Series,2026-08-21,12:15,13:45,"Kellogg Global Hub, L120",,35,0.0,Wine Club,Career,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-018,Fireside chat with an industry leader hosted by the Wine Club.
+Goldman Sachs Case Interview Prep,2026-08-20,17:30,18:30,"Kellogg Global Hub, 1410",,36,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-034,Live case practice led by Goldman Sachs consultants. Limited to 40 students.
+Accenture Coffee Chats,2026-08-20,09:00,10:00,"Kellogg Global Hub, 2410",,36,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-036,Sign up for 20-minute coffee chats with Accenture recruiters. Business casual.
+Nike Coffee Chats,2026-08-20,09:00,10:00,"Kellogg Global Hub, L110",,92,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-071,Sign up for 20-minute coffee chats with Nike recruiters. Business casual.
+Soccer Club Speaker Series,2026-08-20,12:15,13:45,"Kellogg Global Hub, 2410",,20,0.0,Soccer Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-013,Fireside chat with an industry leader hosted by the Soccer Club.
+Board Game Club Kickoff,2026-08-20,12:15,13:45,"Kellogg Global Hub, L110",,44,0.0,Board Game Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-042,Meet the Board Game Club leadership and learn about this year's events. Pizza provided.
+Accenture Coffee Chats,2026-08-18,09:00,10:00,"Kellogg Global Hub, L120",,43,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-023,Sign up for 20-minute coffee chats with Accenture recruiters. Business casual.
+CMC: Resume Review Workshop,2026-08-17,12:15,13:15,"Kellogg Global Hub, 3301",,43,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-048,Career Management Center session: resume review workshop. Bring a laptop.
+Accenture Corporate Presentation,2026-08-16,12:15,13:15,"Kellogg Global Hub, 1410",,22,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-070,"Hear from Accenture alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Music Club Tournament,2026-08-16,07:30,09:51,Henry Crown Sports Pavilion,,83,0.0,Music Club,Fitness,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-014,Get active with the Music Club. All levels welcome.
+Board Game Club 5K Run,2026-08-16,07:30,08:04,Lakefill Fields,,85,0.0,Board Game Club,Fitness,CampusGroups,Outdoor,false,https://campusgroups.example.edu/events/CG-072,Get active with the Board Game Club. All levels welcome.
+CMC: Cover Letter Clinic,2026-08-15,12:15,13:15,"Kellogg Global Hub, 1410",,74,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-072,Career Management Center session: cover letter clinic. Bring a laptop.
+CMC: Salary Negotiation Workshop,2026-08-14,12:15,13:15,"Kellogg Global Hub, L120",,22,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-002,Career Management Center session: salary negotiation workshop. Bring a laptop.
+TGIF,2026-08-14,17:00,19:00,"Kellogg Global Hub, Atrium",,68,0.0,Kellogg Student Life,Social,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-046,"Weekly Kellogg social. Free beer, wine, and snacks for all students."
+Latin American Business Club Weekend Trip,2026-08-13,08:00,16:00,Michigan Dunes,,26,180.0,Latin American Business Club,Social,CampusGroups,Outdoor,false,https://campusgroups.example.edu/events/CG-006,Weekend getaway with the Latin American Business Club. Includes lodging and transport.
+Wine Club Skills Workshop,2026-08-11,17:00,18:30,"Kellogg Global Hub, L120",,73,0.0,Wine Club,Academic,CampusGroups,Indoor,true,https://campusgroups.example.edu/events/CG-051,Hands-on workshop run by second-year Wine Club members.
+P&G Corporate Presentation,2026-08-10,12:15,13:15,"Kellogg Global Hub, L120",,63,0.0,Career Management Center,Career,CMC,Indoor,false,https://cmc.example.edu/events/CMC-074,"Hear from P&G alumni about roles, culture, and the recruiting timeline. Q&A to follow."
+Real Estate Club Skills Workshop,2026-08-10,17:00,18:30,"Kellogg Global Hub, Atrium",,19,0.0,Real Estate Club,Academic,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-024,Hands-on workshop run by second-year Real Estate Club members.
+Marketing Club Speaker Series,2026-08-10,12:15,13:45,"Kellogg Global Hub, L110",,26,0.0,Marketing Club,Career,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-027,Fireside chat with an industry leader hosted by the Marketing Club.
+Culinary Club Kickoff,2026-08-10,12:15,13:45,"Kellogg Global Hub, 3301",,10,0.0,Culinary Club,Social,CampusGroups,Indoor,false,https://campusgroups.example.edu/events/CG-030,Meet the Culinary Club leadership and learn about this year's events. Pizza provided.
+Maida’s Twenty-Ate 🍰,2026-08-01,17:30,20:30,"Berry Park, 4 Berry St, Brooklyn, NY",,20,0.0,Partiful host,Social,Partiful,Outdoor,false,https://go.partiful.com/KbasYNKz,"Hello!!!!! ♌️ ✨
+
+It’s my birthday and I wanted to invite you all to come celebrate with me and have a fun summer afternoon together!
+
+As a true Leo summer moment, we will be outdoors  soaking up the sun and good energy to start the best year ever. ☀️ 💛 
+
+Vengan a celebrar, a reírse mucho, y a have a lot of fun! 💃🏼 🎉que todo fluya y nada influya 
+
+Cheers to twenty-ate 🍾🫰🏼"
+Galilea Turns 26: Wig out edition!!,2026-06-19,19:15,22:15,Madison Square Park (corner near Shake Shack): Madison Ave & E 23rd St,,12,70.0,Partiful host,Social,Partiful,Outdoor,true,https://go.partiful.com/SaH2P3j5,"It’s MY BIRTHDAY and we’re kicking off the long weekend the ONLY correct way… with a party trolley through NYC 🥂🚌✨
+
+🗓 Friday, June 19
+⏰ 7:30 PM – 10:30 PM
+📍 Flatiron pickup (exact location coming soon)
+
+🚌 Sunset ride along the west side 🌇
+🍕 Pizza stop
+🪩 Bar/Dancing after
+
+💖 THE THEME: WIG OUT 💖
+Everyone is HIGHLY encouraged to wear a wig for the night 👀 
+The crazier the better! Let your alter ego out 🤭
+
+🤑 Cost: $70 per person
+(includes trolley, pizza, tip, cups/ice/setup)
+
+🍸 BYOB
+(Feel free to bring your own/additional drinks — cans/wine might be easier )
+
+🚨 Spots are limited! To secure your spot:
+Send $70 via Venmo/PayPal/Zelle by Wednesday, June 3.
+
+No excuses. We will wig out 😌🪩✨"
+Cool Kids Unofficial Welcome to Sevilla Night Out,2026-05-28,20:45,23:45,"El Mirador de Querencia Rooftop, Calle de Fernández y González, 4, Seville, Sevilla, Spain",,76,0.0,Partiful host,Social,Partiful,Outdoor,true,https://go.partiful.com/ezpGkbkV,"Since most of us will already be in Sevilla by Thursday we want to GET THE PARTY STARTED EARLY by organizing an unofficial official night out strictly for the youths: the friends, the pals, the siblings, the cousins etc 
+
+This is not something we’ve paid for & booked, so it’ll be a YOLO night out and we’ll see where the wind takes us. Remember that the actual Welcome Party will be the following night (Friday) at 8pm so we can’t go too hard at this outing, but we can always dance 😜🤪😋🥳💃🏻
+
+Our hotel has an amazing rooftop, so we’re thinking as long as it isn’t rented out for the night by someone else we can all begin the night there. If not, we know of some other rooftop bars and potential follow-up places to head to afterwards.
+
+As the date gets closer we’ll probably have updates. We’d also like to gather in one of the many beautiful plazas for an outdoor casual lunch for anyone interested on Friday. SO EXCITED FOR A FULL WEEKEND TOGETHER LOVE U ALLLLLLL"
+Apartment Cooling,2026-05-09,20:00,23:00,"139 Chrystie St 4F, New York, NY",,20,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/69sGw3pP,Isabelle is LEAVING THE APARTMENT and we would like to cordially invite you to our last hoorah 🙌 let’s rage 👄
+New York of the 90s: A Loft Kickback,2026-04-25,21:00,00:00,"2 Wooster St 3A, New York, NY",,0,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/leYOdLb4,"In the low light of the loft, you tap your cigarette out the window, and feel as if you’d been swallowed up into a vision of New York you’d only ever seen on TV. 
+
+A night with a Giuliani twinkle where going out was a kind of athletic event, where the night always ended in dancing and everyone at the bar was a friend, a friend of a friend, or someone famous. 
+
+Wall Street was humming, print was in, magazines were scripture, martinis were cold, and the internet was but a whisper. Its a golden era ruled by Lenny Kravitz, Catherine Zeta-Jones, and Sade.
+
+No social media, no “mutuals,” no iPhones, no Ubers, no Claude, no godamn turn of the century bullshittery. Only sweaty sex with someone you just met.
+
+Take a yellow cab, stay late, wear your best leather."
+26  🥳🥳,2026-03-28,22:00,01:00,"Gabriela, 90 Wythe Ave, Brooklyn, NY",,0,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://go.partiful.com/HFbw8Hn1,"Would love to celebrate my birthday with all of you with lots of fun and dancing💃🏽💃🏽
+Get ready to skip the line & drink a lot since we do have a minimum spend 😝 making up for not celebrating in NY last year 🥳🥳 
+RSVP by March 13th so I can let them know the headcount!!
+
+IMPORTANT: To my American friends, please do not arrive on time. This is a Brazilian & Tati time event 🥰"
+Element Training Club Launch Party,2026-03-14,16:00,19:00,"667 Grand St, Brooklyn, NY",,362,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/cTXQdPij,"We’re officially celebrating the launch of our new gym! Come through for good food, drinks, music, brand giveaways, merch, raffle and an amazing vibe. If you haven’t been by yet this is the perfect chance to check out the space and hang out with great people. Let’s kick this off right — can’t wait to see you all there!
+
+If you wanted to get a workout in we’ll be having our usual Hyrox sessions in the morning as a pregame. Otherwise this time is just for us to hangout and enjoy good company, would love to see you there!
+
+Friends, family, neighbors all welcome! More details and afters plans to come"
+Casa Jabby Presents: St Paddy’s,2026-03-14,11:30,14:30,"148 N 10th St Apt 2D, Brooklyn, NY",,85,0.0,Partiful host,Social,Partiful,Indoor,true,https://go.partiful.com/aPrT23zj,"Hey lucky leprechauns! Come join us for a rowdy darty at Casa Jabby in celebration of St. Patrick. At 1:45pm, we head to Radegast (5 min walk) for some live music, pints of beer, and raucous debachery. Beware, the Casa Jabby lawn pinches those who aren’t wearing green."
+Welcome Home | BMA & HMA Kickback,2026-02-06,21:00,00:00,"Rooftop of Park Evanston, 1630 Chicago Ave, Evanston, IL",,56,0.0,Partiful host,Nightlife,Partiful,Outdoor,true,https://go.partiful.com/DRED1w1g,"After your SGD's on Friday, connect with the entire Black Management Association (BMA) and Hispanic Management Association (HMA) community at a rooftop with great music, drinks, and vibes as a final sendoff!"
+Grand St. Anime & Art Fair (part 2!),2026-01-31,10:00,13:00,TBA,,965,0.0,Partiful host,Arts,Partiful,Indoor,false,https://go.partiful.com/sknhjuJ3,"Casita Manga is so excited to present the 2nd installment of the Grand St. Anime & Art Fair!
+
+Whether you're new or were able to make it to our inaugural event back in November, there's something here for all lovers of anime, manga, matcha and more.
+
+Please note, this event is recommended for ages 18+ but kids accompanied by parents are welcome to come at their own discretion :)
+
+DJ Sets by:
+Ghosty
+PXT
+alexthejay
+
+Food & Bev:
+Yiqi Matcha
+Treats by K.C.
+
+Artists Alley:
+machipachi
+sueichu
+chil.jpg
+glamtasybeauty
+Ashanti BenonsArt
+LittleBitALot
+Karma's Sins
+
+We hope to see you there!"
+Simay & Kunal’s Birthday!,2026-01-30,21:00,00:00,"Agency Of Record, 118 E 40th St Private Area, New York, NY",,63,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/lbStnc0S,"Hi friends!
+
+One birthday party, double the aging. And yes, Simay will, once again, be older than me. 
+
+We’d be so happy to celebrate with you!
+
++1s are welcome!"
+The Most Belated Housewarming of All Time,2026-01-24,21:00,00:00,"330 1st Ave Apt 4A, New York, NY",,29,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://go.partiful.com/8UJcIwrw,"At long last, the girls of Apt 4A have planned a housewarming!! Did we move here in May? Well yes! Are we just as excited to have you all come warm the apartment in the coldest month of the year? Also yes.  🥳
+
+We’ll have some drinks, but BYOB 🍾"
+Birthday #26,2026-01-16,20:45,23:45,TBA,,11,0.0,Partiful host,Social,Partiful,Indoor,false,https://go.partiful.com/jayZcgqs,Hi! Im having a very chill get together for my bday this year - would love to say hi to everyone 😊 +1s are welcome!
+Birthday Brunch🥞,2025-12-07,12:00,15:00,"330 1st Ave APT 4A, New York, NY",,16,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/0cnqlxWNjsR1hjZRTrY2,"Join me in celebrating my 26th with my favorite weekend activity: Brunch 🥳🕺🏻🎂
+
+I’ll have some bagels, fruit, drinks, etc! 
+
+Please let me know if you can make it (and if you have any allergies)"
+THE GRAND STREET ANIME & ART FAIR,2025-11-22,10:00,13:00,"Veronica Studio, 222 Leonard St, Brooklyn, NY",,852,0.0,Partiful host,Arts,Partiful,Indoor,false,https://partiful.com/e/NM6Zge0MLPtWty8XVTy1,"Casita Manga invites you to the very first Williamsburg based Anime & Art Fair - together with a group of incredible artists, vendors, and DJs!
+
+CASITA MANGA:
+tons of manga for sale - select anime apparel - anime figurines/statues
+
+ARTIST BOOTHS:
+Chil.jpg - Will Tran - Almonte Studio - sfu_illustration -  Mallowboo x Diggymungo - Gendakiwi
+
++ Flash tattooing by artist Will Tran
+
+FOOD & BEV:
+Yiqi's Matcha - matcha bar, spam musubi & onigiri
+Karen Cheung - specialty cookies
+
++ assorted Japanese snacks for sale
+
+Please spread the word to all manga/anime fans, art lovers and matcha fanatics you know! We're really excited to share this with our amazing Brooklyn community. Come support your local businesses + artists!
+
+See you all there!"
+Small Engagement Celebration!,2025-11-15,13:00,16:00,"200 W 86th St 10G, New York, NY",,35,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/xgsSVjKZKXhzFnW7i37o,"Hi everyone! We are planning on having an engagement party in the Spring, but we are going to the courthouse in November and want to have a smaller celebration now! Would love for you to join us for cake and champagne 🍾 Will confirm details soon!"
+Pattryze’s 25th Bday!,2025-11-14,21:00,00:00,"Mister Paradise Red Room, 105 First Ave, New York, NY",,19,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/VytakyoZjTusVKFNNzIs,So excited to be back in NYC for my birthday this year! We’re having an open bar at Mister Paradise in the red room on Friday November 14th. Since it’s an open bar I am required to have a final count soon so please RSVP as soon as you can!🩷 can’t wait to see you all!
+Nightmare on Ludlow Pt 2: Make it a Double,2025-11-01,21:30,00:30,"Chloe 81, 81 Ludlow St, New York, NY",,234,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://partiful.com/e/iVRz8SdRBW3uPhAx3brg,"A very wise man (Chris O’Hara) once said nobody quite matches his freak like your dear friend, Madeline Clinton. So kids, who better to throw the freakiest Halloween bash than the power duo. That’s right, we are SO back. New year, same rules. The people will be dancing, the drinks will be flowing, the music will be bumping. 
+
+When: Saturday November 1st (9:30)…Work night? We wouldn’t dare. 
+
+Where: Chloe 81… The old haunts hate to see us coming (but also TBC, the master minds are still perusing) 
+
+Who: You… In a cheeky costume (group costumes encouraged à la photo above) 
+
+No tricks, just treats,  
+Chris O’Hara 🧡, 5164743594
+Madeline Clinton 🎃, 5164746263
+(Ghost written by Sophia Fikke)"
+Isabelle’s birthday (Halloween?) pregame 🫶,2025-11-01,20:30,23:30,"139 Chrystie St 4F, New York, NY",,38,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/8LqRkBW8JbsBYNiNB9si,"As you all know I love my birthday, and this year I decided to finally embrace the overlap with Halloween. Come dressed up (or not) to celebrate & pregame for wherever the night will take you 🕺🏽
+
+Excited to see all my people ❤️"
+Casa Jabby Presents: A Very Spoooky Pregame,2025-10-31,20:30,23:30,"148 N 10 St Apt 2D, Brooklyn, NY",,59,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/ByfR3PkqzfMRjQdLDiGp,"Trick or treat, spooky sluts! Come join us for a haunted evening of bone-chilling debauchery.  At 11pm we head to the Arlo where all our wicked fantasies will come to life. 
+
+No costume = no entry. Beware: the Casa Jabby lawn may be haunted. Boo!"
+TRIVIA NIGHT,2025-10-29,19:00,22:00,"Welcome Home, 1047 Bedford Ave, Brooklyn, NY",,5,40.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/4Df4eZ3awrlRV5kC8dVy,"Join us for our first round of TRIVIA + PIZZA in the bakery! We will have Triviamaster Josh Warren slinging questions, and the winning team will be awarded the prize of a lifetime.
+
+- Each reserved spot is for a TEAM OF 3-4 PEOPLE. Please don't make your team any bigger, we have a small room and trivia requires space between teams!
+
+- Each table will get a WH pizzetta and bread + butter. Feel free to byob your drink of choice!"
+Green card season finale,2025-09-14,17:30,20:30,"107 Madison St, Brooklyn, NY",,20,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/BOvRE8utSDcVLm9OVMIi,"On the eve of his 10-year anniversary in the United States, a young Italian immigrant finally earns his green card and unlocks the path to his American dream.
+
+But just as the dream becomes real, an unexpected relocation to Seattle threatens everything he’s been fighting for.
+
+Friendship, tears, and ICE take center stage in this spectacular season finale."
+Jabby Hauswarming,2025-09-06,14:30,17:30,"148 N 10 St Apt 2D, Brooklyn, NY",,41,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/A3lXashu3BowWr2tmeti,"It’s Gabby’s (spicy Latina woman) first forray into the mean streets of New York. Jake (gay man) is back after being sentenced to a miserable year living on the clean streets of Boston. Situatuated at the center of the vibrant Williamsburg neighborhood, Jake and Gabby (Jabby) are starting their new life together.
+
+To usher in this new era, we look forward to hosting our dearest friends for an end of summer housewarming darty bash on the renowned Casa Jabby lawn. Get ready 😛"
+Pooja Air: Flight 29,2025-09-06,14:30,17:30,"Rooftop 505 W.37th St, 505 W 37th St, New York, NY",,37,0.0,Partiful host,Social,Partiful,Outdoor,true,https://partiful.com/e/Rm29zTxmXo0jN9W4EbMH,"Get your passports ready, cus we’re taking a trip around the world—no visa required! ✈️
+
+For my 29th birthday we’re taking the theme of Ms. Worldwide to the next level, because you know I love traveling, global beats, and eating my way through every culture.
+
+Boarding Passes (Itinerary):
+Flight #1 - 505 Rooftop
+Flight #2 - Around the world bar crawl (TBD)
+Flight #3 - Caribbean / South American inspired dance party
+
+Luggage (What to bring):
+Bring a culturally inspired snack or drink to share! Think street food vibes, cocktails with flair, or a family recipe that represents your heritage. We’re having a DIY global food tour. 🍜🥟🌮
+
+Travel Guide (What to expect):
+🎶 A playlist featuring 15+ languages
+🍸 Drinks that may or may not require Google Translate
+🧠 Trivia + games to test your world knowledge 
+💃 Dancing, laughing, and a little jet lag (the fun kind)"
+Labor Day BBQ,2025-08-31,18:00,21:00,"280 W 24th St Roof, New York, NY",,13,0.0,Partiful host,Social,Partiful,Outdoor,false,https://partiful.com/e/V7EgpKa0RV6ynksU5NX9,Long overdue roof shindig
+Caroline & Claire turn 25 🫶,2025-08-23,21:00,00:00,"Chloe 81, 81 Ludlow St, New York, NY",,34,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/TUXBzVXveNMHSihjRQ40,"Come celebrate our 25th birthdays and 25 years of friendship!! 👯‍♀️ 🍾 
+
+Roommates, friends, and plus 1’s welcome and encouraged 💖 just please rsvp with + however many and comment names — they asked us to share before!
+
+Hope to see you all there! 🤩🪩💟"
+Sophia’s 25th,2025-06-14,21:00,00:00,"Gran Torino, 131 Berry St, Brooklyn, NY",,75,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/olsBWQbd1ebwAv50K9ZV,"Would love to have you join me in an early celebration of my birthday (12 days ahead to be exact) & the…bittersweet…??? end of my banking career
+
+FAQ:
+* Open bar? 
+    - Yeah u bet 
+* Food?
+    - Pizza + other stuff
+* I live in Manhattan and don’t want to make the trek. What do I do?
+        - The Williamsburg bridge is beautiful at night and so is the L train if you close your eyes and pretend you’re on the Williamsburg bridge
+* +1s?
+    - Text me 
+
+Excited to see everyone!!!
+
+❤️,
+Sophia"
+the kitchen's on fire: SUNDOWN SESSION,2025-06-14,16:00,19:00,"406 W 52nd St Apt 3 / Rooftop, New York, NY",,103,0.0,Partiful host,Social,Partiful,Outdoor,false,https://partiful.com/e/TucoySgQlcmZdlAAPmQF,"Summer’s heating up and so is our rooftop. Venture up to HK and join us for some summer sunset tunes. 
+
+Bevs and vibes will be provided by your schanzzy hosts, though we welcome reinforcements.
+
+Хэн чамд монгол хэл заасан бэ"
+Free the Summer III,2025-06-07,17:30,20:30,"258 S First St 4A, Brooklyn, NY",,104,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/EKbm3WzMQqGLxmeJrbto,"Come through to celebrate the start of another NYC summer. Meet some friends, bring some friends, catch a vibe we’re here for it. +1s are welcome, but please let us know beforehand. 
+
+We’ll have some drinks to get us started but if you have love in your heart you’ll bring some to add to the pile. 
+
+When you get here buzz 4A to get in. Sometimes you need to pull then push the door if it’s stuck. If you have any issues call one of us.
+
+Whether you’re celebrating everything or celebrating absolutely nothing just please don’t break our apartment 🫶🏾"
+Birthday BBQ,2025-05-31,14:00,17:00,"160 Madison Ave Apt 8A, New York, NY",,21,0.0,Partiful host,Social,Partiful,Outdoor,false,https://partiful.com/e/finAkEjIelRmqBDINwrn,"I’m having a chill BBQ on Saturday May 31 and would love to spend my birthday with you guys!
+
+Come by for burgers, bevies and bibes🕺🏻"
+Sunday (BDay) in HK with Nikolaos,2025-04-27,14:00,17:00,"HK Casa, 406 W 52nd St Apt 3, New York, NY",,0,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/inCrkRwBtJaHTWagkpFU,"Hey Friends! 
+
+Our favorite NY season is almost here ☀️ and I want to celebrate my birthday soaking up the sunshine with you all!
+
+I’ll have some snacks to share, but bring a picnic blanket and whatever else you’d want for an afternoon in the park. +1s are very welcome 🧺🌳
+
+Would love to see you there!"
+Alexandra’s 25th Birthday,2025-02-15,21:00,00:00,TBA,,20,55.0,Partiful host,Nightlife,Partiful,Indoor,true,https://partiful.com/e/RjQchxoRxk3iaJsKZZnD,"HIII💕💕
+I’m celebrating my 25th at Little More it’s going to be SOOO FUNNN and I hope you can come!!! It will be an OPEN BAR so lets all drink irresponsibly, look hot, dance and have the best time 😘😘😘😘😘😘😘😘😘"
+Triple Threat,2025-02-08,22:00,01:00,"Grey Lady 77 Delancey St, New York, NY 10002",,62,0.0,Partiful host,Social,Partiful,Outdoor,false,https://partiful.com/e/N8ejpoPOqOW4AGpwc4wl,"Now that all of us are too old to date Leo, join us for our triple decker birthday celebration !!
+
+We’ve reserved a space at the Grey Lady in LES for everyone at 10pm. 
+
+Come ready to get sloshed and be silly, excited to see everyone 🕺🏽🥳🫶🏾
+
+-Suraj, Mansi, Pranusha"
+Simay’s Second 25th Bday,2025-02-07,21:00,00:00,TBA,,27,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/hV5BCtfThA9rI0B8KAuC,"Join me in celebrating my second 25th birthday (🤫) with good music and good people! 
+
+We will be in the semi-private section upstairs between 9 PM-12 AM. There is also a photo booth on the first floor ;)
+
++1’s are welcomed 🫶🏻"
+Pooja’s Got Game,2025-02-06,19:30,22:30,TBA,,23,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/9WPuPzu2BzqzGMT6CS5F,"Hey Friends! ✨ You already know the drill …. It’s GAME NIGHT!!! Get ready to flex those brain muscles! 🧠
+
+There'll be wine and cheese to keep you fueled, but you're encouraged to bring your favorite goodies to keep the good times flowing.
+
+Rounds:
+1. Are You Smarter Than A Scientist 
+2. Blockbuster Battle
+3. Fact or Fiction
+4. The Meme-ing Of Life
+5. Desi Me Rollin
+6. Music Mania
+7. Name That Label
+
+As always, there will be a bonus round to crown the ultimate trivia champ! 
+
+Whether you’re in it to win or just here for the good vibes, I’d love to see y'all learn something new! 🤓"
+Birthday Bash,2025-01-18,21:00,00:00,200 W 86th Street Apartment 10G,,34,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/MJQgKMr1xXmMKYumGzWL,"Come celebrate the birthday of Yadel. Jack’s birthday is also being celebrated on the side.
+
+Event is at our apartment since the bars we tried to rent out told us to get lost, but do not despair we'll be going out after.
+
+Excited to see you all!"
+Fer’s 25th 🍾,2024-12-07,22:00,01:00,Tampico NYC (10 Delancey St),,41,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/MSNp5o8MrbAuoz8vT94i,"To know me is to know I love birthdays—and there's no better way to welcome 25 than to celebrate with my favorite people! Join me in delaying my quarter-life crisis by cheers-ing and dancing at Tampico NYC in the LES 🕺🏻
+
+Let me know if you’re in—can’t wait!"
+Isabelle’s (surprise) 25th Birthday Party/Pregame,2024-11-02,21:00,00:00,139 Chrystie St,,29,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://partiful.com/e/ajBxVa772GK3yZArRa6Z,Come get drunk on Isabelle’s 25th Bday. It’s a ~surprise so don’t text her that you’re excited!! Lots of free drinks and good music. Buzz for 4F when outside. 
+Marilu’s Quarter Life Crisis,2024-10-26,20:00,23:00,55 W 14th St. Apt 4D. Courtney House,,69,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/CD1bm9rHtzsintlkUxZR,"
+Hola fam!
+
+Come for spooky vibes & stay for cheeky drinks for my 25th bday. Costumes are definitely encouraged.  I’m planning on going to City of Gods (link in bio) after this but feel free to use this as your pregame for wherever your night is going. The more of us at City of Gods the better
+
+Can’t wait xx
+"
+Party With Pooj - Trivia Edition,2024-10-23,19:30,22:30,505 W 37th - Rooftop,,29,0.0,Partiful host,Social,Partiful,Outdoor,true,https://partiful.com/e/opiC6U1xVHfSK94pyQuW,"Hey friends! ✨ Get ready to flex those brain muscles because it’s time for a fun-filled Trivia Night! 🧠
+
+Join me for an evening of laughs, roasts, and a whole lot of friendly competition. I promise to not make the questions impossible 😅 IYKYK! There'll be wine and cheese to keep you fueled, but you're encouraged to bring your favorite goodies to keep the good times flowing.
+
+Themes: 
+1. Sports 
+2. Geography 
+3. Music 
+4. Celebrities 
+5. General Knowledge 
+
+Whether you’re in it to win or just here for the good vibes, I’d love to see y'all learn something new! 🤓
+"
+139 House Warming,2024-09-28,20:30,23:30,139 Chrystie St Apt 4F,,30,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/MGldBKwbCDD1vaiWRPMz,HIIII we’re having a house warming!!!! Perfect way to round out the summer and we can’t wait to see everybody there let’s get rowdy 🤠
+Nuestra casa es su casa,2024-09-28,17:00,20:00,200 W 86th Street,,25,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/yIqa7SDpVOL3yGEggYrM,"Happy hour! Come enjoy a drink in the new apartment.
+
+Hora feliz! Vengan a tomar algo en el departamento nuevo. "
+Lizzy St Housewarming,2024-09-14,18:00,21:00,165 Elizabeth st,,84,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/YYP2acFwZ94bm4szjl67,"Summer is ending but Elizabeth st is just beginning; join us as we inaugurate our new abode with food, beverage, and vibes on our rooftop from sunset through the night.
+
+Roof capacity is plentiful but not unlimited so text for +1s"
+Tati & Isa’s House Cooling,2024-08-24,21:30,00:30,"510 2nd Ave (Kips Bay Court), Apt 04F",,39,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://partiful.com/e/VdO1hWWTKC80Z7FZsIo3,"We’re leaving Kips Bay Court and would love to send off the apartment with our friends 🕺🏼 
+
+Will miss: Charlotte Coffee, won’t miss: fighting with management 
+
+We will love you even more if you bring drinks 🫣
+
+Hope you can join us :)"
+Pooja’s Tipsy Trivia,2024-08-21,19:00,22:00,505 W 37th - Rooftop,,31,0.0,Partiful host,Social,Partiful,Outdoor,true,https://partiful.com/e/HLI0RN9IOibWtV8YKL0k,"Hey friends! ✨ Get ready to flex those brain muscles because it’s time for a fun-filled Trivia Night! 🧠
+
+Join me for an evening of laughs, roasts, and a whole lot of friendly competition. I promise to keep things lively with my (sometimes questionable) sense of humor, so get ready for some unexpected twists! There'll be plenty of munchies and drinks to keep you fueled, but you're encouraged to bring your favorite beverages to keep the good times flowing.
+
+And for the ultimate trivia champ? There’s a top-secret grand prize waiting to be claimed! Whether you’re in it to win or just here for the good vibes, I’d love to see y'all make new friends and maybe even learn something new! Can’t wait to see who takes home the prize!
+"
+play time,2024-08-17,13:30,16:30,central park - sheep meadow,,12,0.0,Partiful host,Social,Partiful,Outdoor,true,https://partiful.com/e/WbcTBg9zDed88nCZUkjv,"hi friends, i want to run around in the park. i'll bring spike ball and some drinkies and a picnic blanket
+
+i am manifesting no rain 🙏🏾
+
+invite whoever it is the outdoors"
+1.5 Bday Party,2024-07-13,20:00,23:00,15 Hudson Yards,,19,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/PX8jUl5VlHNRGFVBMDzQ,"Lynn's turnin 24 👵🏻 and Anna's turnin 23.5 👼🏻 let's get drunk :)
+
+there will b snaccs, good vibes, sooo much fun, games, and ur two favs!
+
+dress nice or youll b judged by the doorman 🧍‍♂️"
+SWITHERS Presents: Champagne & Shackles,2024-06-08,20:00,23:00,"5 Withers St, Rooftop",,77,0.0,Partiful host,Social,Partiful,Outdoor,true,https://partiful.com/e/meUg75sB4wijDTKlYOS9,"Dearest Friends,
+
+As the nights get longer 🌃 and the air gets warmer 🥵, SWITHERS is hosting the event of the summer: Champagne 🥂 & Shackles 🥰. Come join us for a night of drinks 🍸 and fancy vibes ✨ on our rooftop 🌉.
+
+A date is NOT required 🚫 (unless you’d like to bring a special boo 👻). We will be handling pairings ⛓️‍💥.
+
+Instructions:
+- RSVP if you are going (we need to buy shackles and champagne bottles)
+- Include a +1 if you are bringing a date (your date should NOT also RSVP)
+- DRESS UP (think: date night). This is MANDATORY for entry
+
+We look forward to welcoming you all at SWITHERS Rooftop.
+
+Sincerely,
+The Gentlemen of SWITHERS"
+Danielle and Zihan’s birthday!!!,2024-05-18,21:30,00:30,Berry Park Rooftop,,46,0.0,Partiful host,Social,Partiful,Outdoor,false,https://partiful.com/e/YgSiCIPaB5s5b3Z8ESSZ,Mark your calendars to come celebrate our birthdays with us at the Barry Park rooftop bar!! Will be very fun and would love to see you all there :)
+SWITHERS Presents: Wine Night II,2024-04-19,21:00,00:00,5 Withers St.,,35,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://partiful.com/e/a6JvOhdGAyREMsNgiTBz,"Dearest Friends,
+
+The Gentlemen of SWITHERS cordially invite you all to kick off the spring season at our annual wine party. But be warned, you will not remember this event for being your average wine night. In fact, you probably won't remember it at all.
+
+While our last wine night back on the island was a more tame, civilized event, please expect nothing of the sort on this side of the East River.
+
+Sincerely,
+The Gentlemen of SWITHERS"
+Better Late than Never,2024-04-13,14:30,17:30,Miss Favela,,33,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/x9TfZZcgVN8G5RmsELtQ,"Come celebrate Tati’s birthday (one month later obviously) and acceptance to LAW SCHOOL!!!
+
+The Brazilian way, of course…🤩
+
++1s are more than welcome! "
+You thought you’d gotten rid of me?,2024-04-06,15:00,18:00,40 N 4th St,,43,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/YisiXKLlWzsubTVWqxoT,"From the creators of “Dont cry for me NYC”, we bring you “You thought you’d gotten rid of me?”. Join us to celebrate the return of one of our most valued community members and farewell NYC’s tenacity queen this saturday with the first rooftop party of the season followed by Radegast. Bring good vibes (but we can’t promise a tears free event)."
+jat24,2024-04-06,14:00,17:00,5 withers st rooftop,,122,0.0,Partiful host,Social,Partiful,Outdoor,false,https://partiful.com/e/6yAnFtj0ZQ18Yn2E91vQ,"celebrate cat & jake’s 24th birthday rooftop darty style
+
++1s welcome
+Building Code: #5065
+Elevator —> R
+
+sounds by:
+Los Anngeles b2b Charmy
+Grüv
+EMBM
+PXT b2b JOMZENG"
+"Dont cry for me, NYC",2024-02-17,14:00,17:00,222 E 34th St apt 2323 (right side elevators of lobby),,57,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/gamJOJXMzaVJRcYVeLr2,Join me in celebrating my temporary departure from NYC. mimosas and aperols will be served. Opcional ir a la fiesta de la victoria despues https://posh.vip/f/98e5
+Yadel & Jack's Bday ,2024-01-20,22:30,01:30,Gonzalez y Gonzalez,,49,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/MwxOdkYCaDdOOmYFv0IS,Looking forward to seeing all of you to party with the two capricorns!! We'll be at Gonzalez y Gonzalez until 12:30 and bar hop afterwards!
+3922 (NYC edition),2023-11-11,21:30,00:30,Little Rebel 219 2nd Ave,,11,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://partiful.com/e/RAjx5iI22kLi7I16p7zc,"the 3922 gang (Claudia, Cristina, Yadel) is finally back together in NYC 🗽 
+
+Join us for a smol pregame and then we'll go out!! "
+Isabelle & Brett’s bdayyy,2023-11-03,20:30,23:30,Solas (East 9th street #1),,97,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/fOyyNb0hUE5OGzFvASb0,We decided to throw it back and do a joint birthday party this year like when we were little 🕺🏻 So excited to have all of our fav people together to celebrate!!
+Birthday BBQ,2023-10-15,14:00,17:00,"393 Weirfield St, Brooklyn, NY 11237",,0,0.0,Partiful host,Social,Partiful,Outdoor,true,https://partiful.com/e/55pxSVzeYwQSHnWwj2tw,"I'm gonna chef it up for my birthday weekend. I will be buying some stuff to grill and beer (obvs) but feel free to bring your own alc + anything you would like me to cook!
+
+Event will take place on the roof of the building. In order to enter the building, use the terminal to ring me (Apt 504) so I can buzz you in.
+
+I will be checking everyone's temperatures (vibes) because it's funny 🙈
+
+P.S. I have to pay a $200 deposit to the building to cover any accidental damages/mess so be prepared for an absurdly large venmo request if you fuck up 😤💯
+
+semi-BYOB & BYOD(iykyk) 😏"
+A mmmoon housewarming,2023-10-15,13:00,16:00,55 W 14th St. Apt 4D,,39,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/AEYw1AClzMB23RjPMuZL,"Holaa
+
+Come cure your sunday scaries with some @mmmoon.ml pastries. Come hang whenever, first come first serve tho... pecan pie tends to run out.
+
+Don’t come if you’re allergic to nuts.
+
+Let's warm up this house ❤️"
+Mexican independence,2023-09-16,20:30,23:30,TBA,,17,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/2j9R8iwuhJauGP0eeXuk,"Epic Pinche Pedota Alert! 🌶️ Dive into a night of genuine Mexican Independence shenanigans! Think you can handle a cactus piñata or balance a sombrero on just sheer charisma? Challenge accepted! Let's light up the night, but hey – don't let our enthusiasm parch you. 🍸 Bring a drink, wear your spiciest attitude, and let's make 'Viva México!' the catchphrase of the night!""
+
+Please bring your own drinks, some will be provided but may not be enough for all. La fiesta es de traje así que traigan chupe!
+
+Feel free to bring other Mexican friends, just let me know beforehand"
+Festivities at 420 🔥,2023-09-16,20:00,23:00,420 E 54th St,,84,0.0,Partiful host,Social,Partiful,Indoor,true,https://partiful.com/e/lcX0dNeSXlA16AxoFlFo,"👋🏽 Say farewell to summer 🔥, celebrate Flynn’s birthday 🥳, and welcome the fall with the fellas at 420 😳!
+
+🚇 Take the E,M,4/5/6 up and join us on the roof for some drinks, riverside views, and amazing vibes all around.
+
+🕺🏽 At 11 PM we’re taking the party to Parnell’s!! Spoke w the manager ahead of time abt the take over and we’ll (hopefully 🤞🏽) have aux"
+"Room in Brooklyn, Presented by SWITHERS",2023-09-09,20:30,23:30,"5 Withers St, Apt 503",,122,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/EdsP6ZqdCDHgw8m6Qf1l,"After a grueling year in the grungy, rat-infested streets of Manhattan, we’ve crossed the East River and docked at the glistening shores of Williamsburg. We’ve trekked from the fish markets to the Mirage, donned hipster attire from vintage stores, beat Zamo at pool at the Alligator Lounge, and finally found our home (and ourselves).
+
+Come join us at our Room in Brooklyn to celebrate the start of a new era. Beats will be provided by our very own resident DJ. We’ll end the night at one of Brooklyn’s finest dance clubs, Black Flamingo.
+
+—
+
+21+ | Valid forms of ID only accepted
+
+No re-entry after midnight
+
+Events by SWITHERS may contain flashing lights and strobe effects that affect photosensitive individuals"
+sonnentanz on 52nd roof ☀️,2023-09-09,15:00,18:00,406 West 52nd Street,,56,0.0,Partiful host,Social,Partiful,Outdoor,true,https://partiful.com/e/yRtehnpto8bxiCRyRkSl,"beautiful guest,
+
+we look forward to having you join us for this high-summer rooftop fest. Vibes will be good, drinks will be merry, and rumor has it that a pixy might appear.
+
+note that this is an outdoor event, so it is subject to the mood of bjarni's weather god, thor. we will let you know if anything changes.
+
+see you soon"
+Housecooling,2023-06-24,21:00,00:00,"1377 Lexington Ave, Apt 4A",,58,0.0,Partiful host,Nightlife,Partiful,Indoor,true,https://partiful.com/e/fgtIlm6jiZ4JrprFf36N,"Come help us write the Weber’s final chapter before we pack our bags to cross the East river. Relive some of the apartments greatest moments including the housewarming that started it all, an indulgent wine night, an intimate Friendsgiving, the foggy Rihanna rave, and the rooftop rager… now it is time to celebrate the end of an era."
+23!,2023-06-16,21:00,00:00,222 E 34th St Apt 2323,,0,0.0,Partiful host,Social,Partiful,Indoor,false,https://partiful.com/e/Meqx2hUxjWoCsObKiqOe,"This is your chance to celebrate the accomplishment of putting up with me for 23 years! Im hosting a pg to celebrate my bday on June 16th, hope you can make it!! <3"
+Birth of Constantine Constantinidis & Sophie<3,2022-10-15,22:00,01:00,540 W 49,,8,0.0,Partiful host,Social,Partiful,Indoor,false,https://par.tf/Xwbs,"Come celebrate your favorite Greek’s
+🇬🇷🇬🇷🇬🇷🇬🇷🏛️🏛️🏛️🏛️🏺🏺🏺🏺& our FAVORITE LIBRA ♎️— SOPHIE’s birth💕💕💕✨✨✨✨"

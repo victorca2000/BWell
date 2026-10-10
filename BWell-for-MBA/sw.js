@@ -1,7 +1,7 @@
-// Swipewell service worker: makes the app installable and usable offline.
+// BWell service worker: makes the app installable and usable offline.
 // The events file is always fetched fresh when online, so updating events.csv
 // shows up on the next open. Bump VERSION when you change index.html.
-const VERSION = 'swipewell-v1';
+const VERSION = 'bwell-v25';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', e => {
